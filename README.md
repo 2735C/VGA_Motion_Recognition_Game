@@ -344,6 +344,7 @@ assign red = r_is_max && s_is_ok;
 
 > ### :four: Uart
 Uart Blockdiagram
+
 <img src="/History/img/hw/img_52.png" width=500 > | <img src="/History/img/hw/img_53.png" width=500 >
 
 ## 시연 영상
