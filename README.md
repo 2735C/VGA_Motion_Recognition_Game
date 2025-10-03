@@ -347,7 +347,7 @@ Uart Sender FSM| tx | rx
 
 > ### :four: Game FSM
 
-<img src="/History/img/hw/img_57.png" width=800 >|
+<img src="/History/img/hw/img_57.png" width=600 >|
 --|
 
 ### 단계별 게임 통신 흐름 요약
