@@ -374,7 +374,7 @@ tx | rx
 
 > ### :five: Game FSM
 
-<img src="/History/img/hw/img_57.png" width=600 >
+<img src="/History/img/hw/img_57.png" width=700 >
 
 ## 시연 영상
 
