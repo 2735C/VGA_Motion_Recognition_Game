@@ -141,10 +141,12 @@ PERFECT|GOOD|BAD|
 
 | Median kernal | Gaussian kernal |
 --|-- 
-<img src="/History/img/hw/img_50.png" width=150 >|<img src="/History/img/hw/img_51.png" width=150 >|
+<img src="/History/img/hw/img_50.png" width=200 >|<img src="/History/img/hw/img_51.png" width=200 >|
 
 ```systemverilog
-// median filter
+// -------------------------
+//       median filter
+// -------------------------
 Sort #(.WIDTH(5)) U_Sort_R (  // Red
         .din (r_data),  // 5비트
         .dout(sort_r_data)
@@ -162,7 +164,9 @@ Sort #(.WIDTH(5)) U_Sort_B (  // Blue
 
 assign Median_result = {sort_r_data[4], sort_g_data[4], sort_b_data[4]};
 
-// Gaussian filter
+// -------------------------
+//      gaussian filter
+// -------------------------
 assign red = (r_data[0] >> 4) + (r_data[1] >> 3) + (r_data[2] >> 4) + 
                  (r_data[3] >> 3) + (r_data[4] >> 1) + (r_data[5] >> 3) + 
                  (r_data[6] >> 4) + (r_data[7] >> 3) + (r_data[8] >> 4);
