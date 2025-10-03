@@ -339,7 +339,13 @@ tx | rx
 
 ## 시연 영상
 
-<img src="https://raw.githubusercontent.com/2735C/VGA_Motion_Recognition_Game/main/History/img/another/game_play_1.gif" width="380">
+| Game Start | Music Select |
+|:--:|:--:|
+| <img src="https://raw.githubusercontent.com/2735C/VGA_Motion_Recognition_Game/main/History/img/another/game_play_1.gif" width="380"> | <img src="https://raw.githubusercontent.com/2735C/VGA_Motion_Recognition_Game/main/History/img/another/game_play_2.gif" width="380"> |
+
+| Game Play |  |
+|:--:|:--:|
+| <img src="https://raw.githubusercontent.com/2735C/VGA_Motion_Recognition_Game/main/History/img/another/game_play_3.gif" width="380"> | &nbsp; |
 
 ## 🚀Trouble Shooting 
 [⚒️[Trouble_Shooting1]](/History/trouble_shooting/Trouble_Shooting1.md)   <br>
