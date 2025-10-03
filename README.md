@@ -205,7 +205,7 @@ assign sdata = (absx + absy > threshold) ? 1 : 0;
 
 > ### :two: Parttern Algorithm
 
-(1) Point In Polygon
+#### (1) Point In Polygon
 - 어떤 점(Point)이 다각형(Polygon) 내부에 있는지 판별 <br>
 
 |내/외부 판별 Algorithm | 핵심 기술|
@@ -217,7 +217,7 @@ assign sdata = (absx + absy > threshold) ? 1 : 0;
 
 > 여러 Algorithm 후보들 중에서 제한된 리소스를 가지고 구현할 수 있는 Ray Crossing 사용
 
-- Ray Crossing
+- #### Ray Crossing
 
 <img src="/History/img/hw/img_101.png" width=300> | 
 --|
@@ -237,9 +237,9 @@ x pixel의 위치가 왼쪽이면 0, 오른쪽이면 1 출력 <br>
 > Pattern 내부 = 1, 외부 = 0 출력
 
 
-(2) 패턴 구현 자동화 스크립트 (Python)
+#### (2) 패턴 구현 자동화 스크립트 (Python)
 
-Issue
+#### Issue
 
 초기에는 수동으로 단순히 화면의 좌표를 직접 추출해 hex 코드로 변환해서 업로드
 
@@ -247,7 +247,7 @@ Issue
 
 > 이러한 문제들을 해결하기 위해 파이썬을 이용해 패턴 구현 자동화 스크립트 구상
 
-Process Flow
+#### Process Flow
 <img src="/History/img/hw/img_104.png" width=300> | 
 --|
 - 이미지를 불러온 후 사용하는 VGA 화면 크기로 맞춤
@@ -261,7 +261,7 @@ Process Flow
 --|
 
 
-Result
+#### Result
 
 |그림   |초기 ver | 최종 ver|
 --|--|-- 
