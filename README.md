@@ -320,13 +320,13 @@ $C_{\max} = \max(R', G', B'), \quad
 C_{\min} = \min(R', G', B'), \quad 
 \Delta = C_{\max} - C_{\min}$
 
-<br>
-
-$S = 
+$$
+S = 
 \begin{cases} 
 0, & C_{\max} = 0 \\[1mm]
 \frac{\Delta}{C_{\max}}, & C_{\max} \neq 0 
-\end{cases}$
+\end{cases}
+$$
 
 
 활용: 색조 및 채도 계산 방법 
