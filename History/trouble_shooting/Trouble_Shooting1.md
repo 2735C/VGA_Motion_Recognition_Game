@@ -2,9 +2,13 @@
 
 ### 🔥 문제: 평가 기준 Perfect/Good/Bad 중 Bad만 출력되는 현상 
 
-
-<img src="https://github.com/2735C/VGA_Motion_Recognition_Game/blob/main/History/img/another/game_2.gif?raw=true" width="380">|
---|
+<table>
+  <tr>
+    <td align="center" width="400">
+      <img src="https://github.com/2735C/VGA_Motion_Recognition_Game/blob/main/History/img/another/game_2.gif?raw=true" width="380">
+      </td>
+  </tr>
+</table>
 
 > #### 세부 문제
 
@@ -27,7 +31,7 @@ assign result = {perfect, good, bad};
 // 3'b100 : perfect, 3'b010 : good, 3'b001 : bad
 ```
 
-> ### 수정 Logic: 삼항 연산자를 사용해 결과를 저장 ✖️, 비교 ⭕
+> ### 수정 Logic: 삼항 연산자를 사용해 결과를 저장 ✖️, 비교 ⭕ <br> 곱셈 대신 Shift 활용
 
 ```systemverilog
 logic [22:0] sum = temp_grn_cnt_reg + temp_red_cnt_reg;
