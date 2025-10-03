@@ -7,8 +7,7 @@
 
 
 <br>
-<img src="/History/img/hw/img_114.png" width=300> | 
---|
+<img src="/History/img/hw/img_114.png" width=300> 
 
 기존 Logic 
 
