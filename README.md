@@ -85,7 +85,7 @@
 
 
 
-<!-->
+<!--
 문우진 | 김병현 | 김을중|
 --|--|--
 ‣ 프로젝트 일정 관리 <br> 발표 및 자료 제작 <br> ‣ PIP, Ray Crossing 알고리즘 설계 <br> ‣ SCCB, UART 통신 설계<br> ‣ Zybo 기반 Top module Merge| ‣ GUI 설계(UART, BGM) <br> ‣ 전처리 필터 설계 (Gaussian), Line Buffer 설계 <br> ‣ 색상 기반 인식 모듈 설계, Game FSM 구조 설계 <br> ‣ Basys3 기반 Top module Merge <br> ‣ Zynq PS-PL 연동 구조 설계| ‣ GUI 제작(화면 효과 구현) <br> ‣ SCCB 통신 설계 <br> ‣ Pattern FSM 구조 설계 <br> ‣ Zynq PS-PL 연동 구조 설계
