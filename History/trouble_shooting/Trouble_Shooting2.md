@@ -12,3 +12,16 @@
 --|
 
 - FSM 이동 조건 타이밍 Miss ➡️ FSM 구조 집중 수정
+
+### 3️⃣ 실제 원인
+**RX_FIFO POP 신호 미연결** ➡️ 처음 RX_Data 수신 후 Update 불가
+
+<img src="https://raw.githubusercontent.com/2735C/VGA_Motion_Recognition_Game/main/History/img/hw/img_68.png" width="500"> |
+--|
+
+### 4️⃣ 1차 해결 방법
+
+Rx_Data 수신이 완료될 때 마다 Pop 신호 출력
+
+<img src="https://raw.githubusercontent.com/2735C/VGA_Motion_Recognition_Game/main/History/img/hw/img_69.png" width="500"> |
+--|
