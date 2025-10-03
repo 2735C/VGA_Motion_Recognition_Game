@@ -231,8 +231,10 @@ x pixel의 위치가 왼쪽이면 0, 오른쪽이면 1 출력 <br> <br>
 --|-- 
 
 
+(x1, )
 총 30개의 Module 병렬 실행 → Pattern 제작 <br>
-Pattern 내부 = 1, 외부 = 0 출력
+x축에서 x좌표가 증가할 때마다 hit 횟수 Check (XOR 연산 : 홀수번 Hit = 1,짝수번 Hit = 0) <br>
+> Pattern 내부 = 1, 외부 = 0 출력
 
 
 (2) 패턴 구현 자동화 스크립트 (Python)
