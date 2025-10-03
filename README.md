@@ -162,6 +162,14 @@ assign sdata = (absx + absy > threshold) ? 1 : 0;
 
 > ### :two: Parttern Algorithm
 
+(1) Point In Polygon
+- 어떤 점(Point)이 다각형(Polygon) 내부에 있는지 판별 <br>
+<img src="/History/img/hw/img_100.png" alt="스위치 화면" width="400">
+- Ray Crossing
+
+
+(2) 패턴 구현 자동화 스크립트 (Python)
+
 > ### :three: Uart
 
 ## 시연 영상
