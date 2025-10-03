@@ -90,7 +90,7 @@ GUI 설계| UART 통신, BGM | 디자인| 시각 효과 구현| 랭킹보드 구
 <img src="/History/img/hw/img_113.png" width=300> | 
 --|
 
-K-POP DEMON HUNTERS의 춤추는 동작을 바탕으로한 모션 인식 게임을 통해 우울감과 스트레스 해소에 도움이 되고자 함.
+K-POP DEMON HUNTERS의 춤추는 동작을 바탕으로한 모션 인식 게임을 통해 우울감, 스트레스 해소에 도움이 되고자 함.
 
 
 
