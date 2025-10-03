@@ -131,6 +131,10 @@ PERFECT|GOOD|BAD|
 
 > ### :one: Filter
 
+(1) 
+
+(2) Sobel 
+
 > ### :two: Parttern Algorithm
 
 > ### :three: Uart
