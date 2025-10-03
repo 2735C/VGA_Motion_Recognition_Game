@@ -318,11 +318,15 @@ assign red = (r5 >= 12) && (g6 <= 6) && (b5 <= 6);
 
 #### RGB :arrow_right: HSV 변환 공식 활용
 
+\begin{tabular}{|l|}
+\hline
 $C_{\max} = \max(R', G', B'), \quad 
 C_{\min} = \min(R', G', B'), \quad 
-\Delta = C_{\max} - C_{\min}$
-
-$S = \frac{\Delta}{C_{\max}} \quad \text{if } C_{\max} \neq 0$
+\Delta = C_{\max} - C_{\min}$ \\
+\hline
+$S = \frac{\Delta}{C_{\max}} \quad \text{if } C_{\max} \neq 0$ \\
+\hline
+\end{tabular}
 
 
 
