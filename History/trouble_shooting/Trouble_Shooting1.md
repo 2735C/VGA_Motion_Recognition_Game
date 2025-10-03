@@ -2,19 +2,41 @@
 
 ### 🔥 문제: 평가 기준 Perfect/Good/Bad 중 Bad만 출력되는 현상 
 
-> 세부 사항
 
-- 1. 로직에 문제가 존재
-- 2. 하지만, 로직을 수정하기에는 이미 LUT가 99%
-
-<img src="https://github.com/2735C/VGA_Motion_Recognition_Game/blob/main/History/img/another/game_2.gif?raw=true" width="380">
-
-
-<br>
-
-
-<img src="/History/img/hw/img_114.png" width=300> |
+<img src="https://github.com/2735C/VGA_Motion_Recognition_Game/blob/main/History/img/another/game_2.gif?raw=true" width="380">|
 --|
+
+> #### 세부 문제
+
+1. **로직에 문제**가 존재
+2. 하지만, 로직을 수정하기에는 이미 **LUT가 99%**
+
+
+### 🤩 문제 해결 1: LUT 축소 (4% 🔽)
+
+> ### 기존 Logic: Register를 사용하여 결과 저장
+
+```systemverilog
+assign score = ((temp_grn_cnt_reg * 10) / (temp_grn_cnt_reg + temp_red_cnt_reg));
+
+assign perfect = (score >= 8) ? 1'b1 : 1'b0;
+assign good    = ((score >= 5) && (score < 8)) ? 1'b1 : 1'b0;
+assign bad     = (score < 5) ? 1'b1 : 1'b0;
+
+assign result = {perfect, good, bad}; 
+// 3'b100 : perfect, 3'b010 : good, 3'b001 : bad
+```
+
+> ### 수정 Logic: 삼항 연산자를 사용해 결과를 저장 ✖️, 비교 ⭕
+
+```systemverilog
+logic [22:0] sum = temp_grn_cnt_reg + temp_red_cnt_reg;
+
+// result = {perfect, good, bad}
+assign result =  (temp_grn_cnt_reg * 5 >= (sum << 2)) ? 3'b100 : ((temp_grn_cnt_reg << 1) < sum) ? 3'b001 : 3'b010; 
+```
+
+### 🤩 문제 해결 2:  Porch 영역 Count 배제
 
 > ### 기존 Logic 
 
