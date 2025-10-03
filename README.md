@@ -244,7 +244,7 @@ Issue
 
 → 측정오차, 비효율성, 일관성 부족
 
-이러한 문제들을 해결하기 위해 파이썬을 이용해 패턴 구현 자동화 스크립트 구상
+> 이러한 문제들을 해결하기 위해 파이썬을 이용해 패턴 구현 자동화 스크립트 구상
 
 Process Flow
 <img src="/History/img/hw/img_104.png" width=300> | 
@@ -263,8 +263,9 @@ Process Flow
 Result
 
 |   |초기 ver | 최종 ver|
-<img src="/History/img/hw/img_108.png" width=300 >|<img src="/History/img/hw/img_106.png" width=300 >|<img src="/History/img/hw/img_107.png" width=300 >|
 --|--|-- 
+<img src="/History/img/hw/img_108.png" width=300 >|<img src="/History/img/hw/img_106.png" width=300 >|<img src="/History/img/hw/img_107.png" width=300 >|
+
 
 
 
