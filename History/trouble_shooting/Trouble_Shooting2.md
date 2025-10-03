@@ -11,7 +11,7 @@
 <img src="https://raw.githubusercontent.com/2735C/VGA_Motion_Recognition_Game/main/History/img/hw/img_67.png" width="800"> |
 --|
 
-- FSM 이동 조건 타이밍 Miss ➡️ FSM 구조 집중 수정
+- FSM 이동 조건 타이밍 Miss로 예상 ➡️ FSM 구조 집중 수정 (해결 x)
 
 ### 3️⃣ 실제 원인
 **RX_FIFO POP 신호 미연결** ➡️ 처음 RX_Data 수신 후 Update 불가
