@@ -398,5 +398,9 @@ tx | rx
 [⚒️[Trouble_Shooting1]](/History/trouble_shooting/Trouble_Shooting1.md)   <br>
 [⚒️[Trouble_Shooting2]](/History/trouble_shooting/Trouble_Shooting2.md)  <br>
 [⚒️[Trouble_Shooting3]](/History/trouble_shooting/Trouble_Shooting3.md) <br>
-[⚒️[Trouble_Shooting4]](/History/trouble_shooting/Trouble_Shooting4.md) <br>
 
+추가 가능 ~~
+[⚒️[Trouble_Shooting4]](/History/trouble_shooting/Trouble_Shooting4.md) <br>
+[⚒️[Trouble_Shooting5]](/History/trouble_shooting/Trouble_Shooting5.md) <br>
+[⚒️[Trouble_Shooting6]](/History/trouble_shooting/Trouble_Shooting6.md) <br>
+[⚒️[Trouble_Shooting7]](/History/trouble_shooting/Trouble_Shooting7.md) <br>
