@@ -349,6 +349,16 @@ Uart Sender FSM
 
 <img src="/History/img/hw/img_54.png" width=600 >
 
+| 구분            | 코드/비트 | 조건                | 송신 문자열 |
+|:----------------|:---------:|:--------------------|:-----------|
+| **모드 선택**     | 0         | uart_mode_sel == 0  | 'qstick'  |
+|                 | 1         | uart_mode_sel == 1  | 'golden'   |
+|                 | 2         | uart_mode_sel == 2  | 'sodapop'  |
+| **결과 플래그**   | 0         | result[0] == 1      | 'BAD'      |
+|                 | 1         | result[1] == 1      | 'GOOD'     |
+|                 | 2         | result[2] == 1      | 'PERFECT'  |
+
+> ### :five: Game FSM
 
 ## 시연 영상
 
