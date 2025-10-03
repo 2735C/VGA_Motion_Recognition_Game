@@ -340,12 +340,12 @@ assign red = r_is_max && s_is_ok;
 
 
 > ### :four: Uart
-Uart Blockdiagram
+### Uart Blockdiagram
 
 <img src="/History/img/hw/img_52.png" width=600 > | <img src="/History/img/hw/img_53.png" width=600 >
 --|--
 
-Uart Sender FSM
+#### Uart Sender FSM
 
 <img src="/History/img/hw/img_54.png" width=600 >
 
@@ -375,6 +375,15 @@ tx | rx
 > ### :five: Game FSM
 
 <img src="/History/img/hw/img_57.png" width=800 >
+
+### UART 입력 패턴 (공통 전송 규칙)
+> **모든 동작은 동일한 전송 규칙을 따름:** 2초 동안 **0.25초 간격**으로 동일 문자열 반복 전송 (총 **8회**)
+
+| 동작 | 전송 문자열 | 미리보기 |
+|:---:|:---:|:---:|
+| Start | `qstick` | <img src="/History/img/hw/img_58.png" width="300" alt="qstick start"> |
+| Golden 곡 선택 | `golden` | <img src="/History/img/hw/img_59.png" width="300" alt="golden select"> |
+| Sodapop 곡 선택 | `sodapop` | <img src="/History/img/hw/img_60.png" width="300" alt="sodapop select"> |
 
 ## 시연 영상
 
