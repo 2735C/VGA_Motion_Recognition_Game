@@ -358,6 +358,8 @@ Uart Sender FSM
 |                 | 1         | result[1] == 1      | 'GOOD'     |
 |                 | 2         | result[2] == 1      | 'PERFECT'  |
 
+<img src="/History/img/hw/img_55.png" width=300 >
+
 > ### :five: Game FSM
 
 ## 시연 영상
