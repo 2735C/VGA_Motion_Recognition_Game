@@ -348,6 +348,11 @@ Uart Blockdiagram
 <img src="/History/img/hw/img_52.png" width=600 > | <img src="/History/img/hw/img_53.png" width=600 >
 --|--
 
+Uart Sender FSM
+
+<img src="/History/img/hw/img_54.png" width=600 >
+
+
 ## 시연 영상
 
 
