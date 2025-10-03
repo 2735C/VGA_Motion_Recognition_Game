@@ -350,6 +350,7 @@ Uart Sender FSM
 <img src="/History/img/hw/img_54.png" width=600 >
 
 <img src="/History/img/hw/img_55.png" width=400 > | <img src="/History/img/hw/img_56.png" width=400 > 
+--|--
 
 > ### :five: Game FSM
 
