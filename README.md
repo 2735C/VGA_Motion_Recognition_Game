@@ -16,15 +16,60 @@
 
 ## 📝 프로젝트 개요
 
-### :one: 연구 배경
+실시간 카메라 입력(OV7670)을 VGA 파이프라인으로 처리하여 **댄스 가이드 패턴과 사용자의 동작 일치율을 측정**하고 점수를 산출하는 게임입니다. 시작/곡 선택은 **특정 색(빨간색) 인식**으로 입력받으며, 게임 종료 후 점수를 **랭킹 보드**에 기록합니다.
+
+- **종료 조건**: 음악 선택 후 나오는 모든 안무 패턴 종료 시
+- **점수 등급**: Perfect ≥ 80%, Good 50–80%, Bad < 50%
+- **촬영 조건 예시**: 카메라–사용자 거리 약 4.8 m
+
+#### :one: 프로젝트 선정 배경
+
+## 
+
+> 문제 인식 : 현대 사회에 들어 지속적으로 증가하는 우울감과 스트레스
+<br>
+
+> 해결 방안 : K-POP은 글로벌 시장에서 큰 인기를 얻고 있다. K-POP은 긴장감을 풀어주고 용기를 북돋아주며, 긍정적인 에너지를 전달한다.
+
+#### 🎮 Game Rule
+
+<table>
+  <tr>
+    <td align="center" width="400">
+      <img src="https://github.com/2735C/VGA_Motion_Recognition_Game/blob/main/History/img/another/game_1.gif?raw=true" width="380" alt="게임 화면">
+    </td>
+    <td width="400">
+      <span style="font-size:25px; font-weight:bold;">:one: 패턴을 확인한다. </span><br><br>
+      <span style="font-size:25px; font-weight:bold;">:two: 패턴에 맞춰 몸을 맞춘다. </span><br><br>
+      <span style="font-size:25px; font-weight:bold;">:three: 점수를 확인한다. </span><br><br>
+      <span style="font-size:25px; font-weight:bold;">:four: 랭킹칸에 이름을 입력한다. </span><br><br>
+    </td>
+  </tr>
+</table>
+
+
+
+#### :two: 주요 기능
+
+##
+
+- **실시간 영상 전처리**: Median(노이즈 저감), Gray(색상 단순화), Sobel(에지 검출), + (파이프라인)
+- **패턴 매칭**: PIP(Point In Polygon) + **Ray Crossing**으로 패턴 내부/외부 판정, 30개 선분 병렬 처리
+- **게임 FSM**: 시작/선택/플레이/종료 상태 전이, **UART 연계 Python UI**로 랭킹 입력 및 UI 표시
+- **타이밍 정합**: PIP 내부에서 **3FF**로 비디오 데이터 영역과 패턴 데이터 영역의 **CDC**문제 해결
+
+
+#### :three: 시스템 아키텍처
+
+##
+
+카메라(OV7670) → Basys3(PL) → VGA/HDMI 출력
+**UART**를 통해 PC(Python GUI)와 통신
+
+- Toolchain: Vivado 2020.2, Xilinx Vitis / VS Code
+- HW: Basys3, OV7670, VGA→HDMI 케이블, 캡쳐 보드
 
 <!--
-
-<img src="/History/img/another/img_7.png" width=400 >|본 프로젝트는 ISP 알고리즘을 활용한 VGA 영상처리 모션 인식 게임입니다. <br><br> 현대 사회는 지속적으로 우울증 환자가 증가하고 있습니다. <br> 건강보험공단에서 제출받은 자료에 따르면, 2020년 약 87만 명이었던 우울증 환자 수가 2023년에는 약 109만 명으로 25% 증가했으며, 특히 아동 및 청소년, 청년층에서 급증하는 추세를 보였습니다. <br> 연구 결과에 따르면 능동적인 활동은 우울감이 감소시키고 스트레스 해소에 도움이 된다고 합니다.<br><br> 따라서, 저희 팀은 "DDR"을 모티브로 하여 최근 전세계적으로 선풍적인 인기를 얻고 있는 "K-POP DEMON HUNTERS" 라는 애니메이션의 춤 동작을 배울 수 있는 모션 인식 게임을 제작했습니다. |
---|--
-
--->
-
 
 본 프로젝트는 **ISP 알고리즘을 활용한 VGA 영상처리 모션 인식 게임**입니다. 
 
@@ -33,7 +78,6 @@
 연구 결과에 따르면 **능동적인 활동**은 **우울감이 감소**시키고 **스트레스 해소에 도움**이 된다고 합니다.
 
 따라서, 저희 팀은 **"DDR"을 모티브**로 하여 최근 전세계적으로 선풍적인 인기를 얻고 있는 **"K-POP DEMON HUNTERS"** 라는 애니메이션의 **춤 동작을 배울 수 있는 모션 인식 게임**을 제작했습니다. 
-
 
 ### :two: 기술/하드웨어 요소
 
@@ -55,6 +99,10 @@ GUI/게임 구현: Python 기반 게임 UI 제작, 랭킹 보드, 화면 효과
 
 - **K-POP 챌린지**: 점수 공유/영상 업로드로 **SNS 확산** 기대
 
+-->
+
+
+
 
 <!--
 
@@ -75,22 +123,6 @@ GUI/게임 구현: Python 기반 게임 UI 제작, 랭킹 보드, 화면 효과
 
 K-POP DEMON HUNTERS의 춤추는 동작을 바탕으로한 모션 인식 게임을 통해 우울감, 스트레스 해소에 도움이 되고자 함.
 -->
-
-## 🎮 Game Rule
-
-<table>
-  <tr>
-    <td align="center" width="400">
-      <img src="https://github.com/2735C/VGA_Motion_Recognition_Game/blob/main/History/img/another/game_1.gif?raw=true" width="380" alt="게임 화면">
-    </td>
-    <td width="400">
-      <span style="font-size:25px; font-weight:bold;">:one: 패턴을 확인한다. </span><br><br>
-      <span style="font-size:25px; font-weight:bold;">:two: 패턴에 맞춰 몸을 맞춘다. </span><br><br>
-      <span style="font-size:25px; font-weight:bold;">:three: 점수를 확인한다. </span><br><br>
-      <span style="font-size:25px; font-weight:bold;">:four: 랭킹칸에 이름을 입력한다. </span><br><br>
-    </td>
-  </tr>
-</table>
 
 
 ## 연구 일정 250911~250926
