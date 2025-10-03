@@ -75,6 +75,23 @@ GUI 설계| UART 통신, BGM | 디자인| 시각 효과 구현| 랭킹보드 구
 
 
 ## 연구 배경
+<img src="/History/img/hw/img_109.png" width=300 >|<img src="/History/img/hw/img_110.png" width=300 >|
+--|--
+
+현대 사회에 들어 지속적으로 우울증 환자들이 증가
+
+→ 능동적인 활동을 통해 우울감 감소, 스트레스 해소에 도움이 되는 연구결과가 존재
+
+<img src="/History/img/hw/img_111.png" width=300 >|<img src="/History/img/hw/img_112.png" width=300 >|
+--|--
+
+현재 K-POP은 전세게적으로 큰 인기를 끌고 있는 가운데 특히 K-POP DEMON HUNTERS라는 애니메이션은 남녀노소 어른아이 할 거 없이 좋아하며 선풍적인 인기를 얻고 있음.
+
+<img src="/History/img/hw/img_113.png" width=300> | 
+--|
+
+K-POP DEMON HUNTERS의 춤추는 동작을 바탕으로한 모션 인식 게임을 통해 우울감과 스트레스 해소에 도움이 되고자 함.
+
 
 
 ## Game Rule
