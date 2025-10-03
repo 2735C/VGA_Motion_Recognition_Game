@@ -300,9 +300,10 @@ assign red = r_is_max && s_is_ok;
 <img src="/History/img/hw/img_52.png" width=600 > | <img src="/History/img/hw/img_53.png" width=600 >
 --|--
 
-#### Uart Sender FSM
+### Uart Sender FSM
 
-<img src="/History/img/hw/img_54.png" width=600 >
+<img src="/History/img/hw/img_54.png" width=600 >|
+--|
 
 <!--
 |       구분      | 코드/비트 | 조건                | 송신 문자열 |
@@ -327,22 +328,23 @@ tx | rx
 --|--
 <img src="/History/img/hw/img_55.png" width=400 > | <img src="/History/img/hw/img_56.png" width=200 > 
 
-동일한 문자열을 **2초 동안 0.25초 간격(총 8회)**로 *연속* 전송하면 게이지가 0→100%로 차며,  
+* 동일한 문자열을 **2초 동안 0.25초 간격(총 8회)**로 *연속* 전송하면 게이지가 0→100%로 차며,  
 **Python GUI State**와 **FPGA 게임 FSM State**가 동시에 다음 단계로 전이.  
-한 번이라도 **미수신/오수신/간격 위반**이 발생하면 **게이지는 0%로 즉시 리셋**.
+* 한 번이라도 **미수신/오수신/간격 위반**이 발생하면 **게이지는 0%로 즉시 리셋**.
 
 | 'qstick' | 'golden' | 'sodapop' |
 |:---:|:---:|:---:|
 | <img src="/History/img/hw/img_58.png" width=400 > | <img src="/History/img/hw/img_59.png" width=400 > | <img src="/History/img/hw/img_60.png" width=400 > |
 
-패턴 일치율에 따른 점수 판정 (100 ~ 80 / 80 ~ 50 / 50 ~ 0)  
+* **패턴 일치율**에 따른 점수 판정 (80% 🔼 / 80% ~ 50% / 50% 🔽)  
 | 'PERFECT' | 'GOOD' | 'BAD' |
 |:---:|:---:|:---:|
 | <img src="/History/img/hw/img_63.png" width=400 > | <img src="/History/img/hw/img_64.png" width=400 > | <img src="/History/img/hw/img_65.png" width=400 > |
 
 > ### :four: Game FSM
 
-<img src="/History/img/hw/img_57.png" width=800 >
+<img src="/History/img/hw/img_57.png" width=800 >|
+--|
 
 ### 단계별 게임 통신 흐름 요약
 | 단계 | 트리거/타이밍 | 방향 | 토큰 | 의미 |
