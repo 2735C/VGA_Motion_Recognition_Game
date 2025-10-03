@@ -4,9 +4,9 @@
 
 <table>
   <tr>
-    <td align="center" width="400">
-      <img src="https://github.com/2735C/VGA_Motion_Recognition_Game/blob/main/History/img/another/game_2.gif?raw=true" width="380">
-      </td>
+    <td align="center">
+      <img src="https://github.com/2735C/VGA_Motion_Recognition_Game/blob/main/History/img/another/game_2.gif?raw=true" style="width:380px;">
+    </td>
   </tr>
 </table>
 
@@ -18,7 +18,7 @@
 
 ### 🤩 문제 해결 1: LUT 축소 (4% 🔽)
 
-> ### 기존 Logic: Register를 사용하여 결과 저장
+> #### 기존 Logic: Register를 사용하여 결과 저장
 
 ```systemverilog
 assign score = ((temp_grn_cnt_reg * 10) / (temp_grn_cnt_reg + temp_red_cnt_reg));
@@ -31,7 +31,7 @@ assign result = {perfect, good, bad};
 // 3'b100 : perfect, 3'b010 : good, 3'b001 : bad
 ```
 
-> ### 수정 Logic: 삼항 연산자를 사용해 결과를 저장 ✖️, 비교 ⭕ <br> 곱셈 대신 Shift 활용
+> #### 수정 Logic: <br> 1. 곱셈 단순화(10 → 5) 및 Shift 활용 & 나눗셈 제거 <br> 2. 삼항 연산자를 사용해 결과를 저장 ✖️, 비교 ⭕ 
 
 ```systemverilog
 logic [22:0] sum = temp_grn_cnt_reg + temp_red_cnt_reg;
