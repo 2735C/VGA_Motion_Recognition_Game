@@ -133,7 +133,32 @@ PERFECT|GOOD|BAD|
 
 (1) 
 
-(2) Sobel 
+(2) Sobel Filter
+
+- 엣지 검출을 위한 대표적인 이미지 처리 기법 
+- 이미지에서 픽셀의 밝기 값 변화를 이용해 경계선을 탐지
+
+#### 🤔 Edge 검출 원리 
+
+Centered Difference: `$\frac{\partial I}{\partial x} = \frac{I(x+h) - I(x-h)}{2h}$`
+
+> 가운데를 기준으로 양쪽 값을 사용해 기울기 계산 → 편향 감소, 정확도 향상으로 안정적인 경계 검출 및 노이즈에 강함
+
+|가로 방향 | 세로 방향|
+--|--
+<img src="/History/img/hw/img_1.png" alt="스위치 화면" width="400">|<img src="/History/img/hw/img_2.png" alt="스위치 화면" width="400">
+
+```systemverilog
+localparam threshold = 1500;
+
+assign xdata = data02 + (data12 << 1) + data22 - data00 - (data10 << 1) - data20;
+assign ydata = data00 + (data01 << 1) + data02 - data20 - (data21 << 1) - data22;
+
+assign absx = xdata[9] ? (~xdata + 1) : xdata;
+assign absy = ydata[9] ? (~ydata + 1) : ydata;
+assign sdata = (absx + absy > threshold) ? 1 : 0;
+```
+
 
 > ### :two: Parttern Algorithm
 
