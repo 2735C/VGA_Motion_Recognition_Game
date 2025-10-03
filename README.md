@@ -448,7 +448,7 @@ tx | rx
 | 단계 | 트리거/타이밍 | 방향 | 토큰 | 의미 |
 |---|---|---|---|---|
 | ① Start | 게이지 규칙 충족(8/8) | FPGA→PC | `qstick` | 시작 신호 송신 (tx) |
-| ② 곡 선택 | `golden` 또는 `sodapop` 게이지 규칙 충족 | FPGA→PC | `golden` / `sodapop` | 곡 선택 신호 송신 (tx) |
+| ② 곡 선택 | `golden` 또는 `sodapop` 게이지 규칙 충족(8/8) | FPGA→PC | `golden` / `sodapop` | 곡 선택 신호 송신 (tx) |
 | ③ 곡 확정 | 3,2,1 카운트다운 끝나는 순간 | PC→FPGA | `g` / `s` | Golden/Sodapop 최종 확정 (rx) |
 | ④ 게임 진행(루프) | 5,4,3,2,1 카운트다운 끝나는 순간 | PC→FPGA | `p` | 한 패턴의 판정 시점 도달 (rx) |
 | ⑤ 판정 결과 | ④ 이후 즉시 | FPGA→PC | `BAD` / `GOOD` / `PERFECT` | 패턴 일치율 기반 판정 송신 (tx) |
