@@ -263,7 +263,7 @@ Process Flow
 
 Result
 
-|   |초기 ver | 최종 ver|
+|그림   |초기 ver | 최종 ver|
 --|--|-- 
 <img src="/History/img/hw/img_108.png" width=300 >|<img src="/History/img/hw/img_106.png" width=300 >|<img src="/History/img/hw/img_107.png" width=300 >|
 
