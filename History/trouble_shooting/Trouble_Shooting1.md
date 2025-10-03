@@ -3,7 +3,7 @@
 ### 🔥 문제: 평가 기준 Perfect/Good/Bad 중 Bad만 출력되는 현상 
 
 
-![게임 화면](https://github.com/2735C/VGA_Motion_Recognition_Game/blob/main/History/img/another/game_error_1.gif?raw=true)
+<img src="https://github.com/2735C/VGA_Motion_Recognition_Game/blob/main/History/img/another/game_error_1.gif?raw=true" width="380">
 
 
 > #### 세부 문제
@@ -63,6 +63,6 @@ $$
      *  Porch 영역 : Display 영역 출력 전/후 Sync를 맞추기 위한 Margin영역
 역
 
-#### 수정 Logic
+> #### 수정 Logic
 
-:arrow_right: **VGA Decoder의 DE 신호**를 받아서 처리 -> **유효한 픽셀(640x480)**의 수만 **Count**
+:arrow_right: **VGA Decoder의 DE 신호**를 받아서 처리 -> **유효한 픽셀(640x480)** 의 수만 **Count**
