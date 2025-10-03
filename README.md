@@ -3,13 +3,13 @@
 ## 팀원 
 
 
-|Team Leader|Team Member1Team Member2| 
+|Team Leader|Team Member1|Team Member2| 
 --|--|--|
 | [<img src="/History/img/another/profile_1.png" width=150 > </br> @문우진](https://github.com/) |  [<img src="/History/img/another/profile_2.png" width=150 > </br> @김병현](https://github.com/)|  [<img src="/History/img/another/profile_3.png" width=150 > </br> @김을중](https://github.com/)| 
 
 |Team Member3|Team Member4|Team Member5|Team Member6| 
 --|--|--|--|
-| [<img src="/History/img/another/profile_4.png" width=150 > </br> @박승범](https://github.com/) |  [<img src="/History/img/another/profile_5.png" width=150 > </br> @안재용](https://github.com/)| [<img src="/History/img/another/profile_6.png" width=150 > </br> @오정일](https://github.com/) |  [<img src="/History/img/another/profile_7.png" width=150 > </br> @Jung EunJi](https://github.com/2735C)|
+| [<img src="/History/img/another/profile_4.png" width=150 > </br> @박승범](https://github.com/) |  [<img src="/History/img/another/profile_5.png" width=150 > </br> @안재용](https://github.com/)| [<img src="/History/img/another/profile_6.png" width=150 > </br> @오정일](https://github.com/) |  [<img src="/History/img/another/profile_7.jpg" width=150 > </br> @Jung EunJi](https://github.com/2735C)|
 
 
 
