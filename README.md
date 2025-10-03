@@ -111,6 +111,8 @@ GUI 설계| UART 통신, BGM | 디자인| 시각 효과 구현| 랭킹보드 구
 
 ## 프로젝트 과정
 
+> 더 많은 내용을 확인하고 싶으면 --> [[발표 자료]](/Report/AI시스템반도체_발표용_1조_우리함께춤을.pdf)
+
 ### SW
 
 > #### GUI
@@ -195,6 +197,8 @@ Centered Difference: $\frac{\partial I}{\partial x} = \frac{I(x+h) - I(x-h)}{2h}
 
 > 가운데를 기준으로 양쪽 값을 사용해 기울기 계산 → 편향 감소, 정확도 향상으로 안정적인 경계 검출 및 노이즈에 강함
 
+ #### Edge 검출을 위한 Sobel Mask
+
 |가로 방향 | 세로 방향|
 --|--
 <img src="/History/img/hw/img_1.png" width=150 >|<img src="/History/img/hw/img_2.png" width=150 >|
@@ -245,7 +249,28 @@ Pattern 내부 = 1, 외부 = 0 출력
 
 (2) 패턴 구현 자동화 스크립트 (Python)
 
-> ### :three: Uart
+> ### :three: Color Detection Algorithm
+
+> RGB 방식에서 
+
+```systemverilog
+assign max_val = (r6 > g6) ? ((r6 > b6) ? r6 : b6) : ((g6 > b6) ? g6 : b6);
+assign min_val = (r6 < g6) ? ((r6 < b6) ? r6 : b6) : ((g6 < b6) ? g6 : b6);
+assign delta = max_val - min_val;
+
+assign r_is_max = (r6 > g6) && (r6 > b6) && (r6 > 32);
+assign s_is_ok = (delta >= (max_val >> 2));
+
+assign red = r_is_max && s_is_ok;
+```
+
+
+
+
+
+
+> ### :four: Uart
+
 
 ## 시연 영상
 
