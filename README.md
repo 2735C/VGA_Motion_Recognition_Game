@@ -337,6 +337,7 @@ tx | rx
 | <img src="/History/img/hw/img_58.png" width=400 > | <img src="/History/img/hw/img_59.png" width=400 > | <img src="/History/img/hw/img_60.png" width=400 > |
 
 * **패턴 일치율**에 따른 점수 판정 (80% 🔼 / 80% ~ 50% / 50% 🔽)  
+
 | 'PERFECT' | 'GOOD' | 'BAD' |
 |:---:|:---:|:---:|
 | <img src="/History/img/hw/img_63.png" width=400 > | <img src="/History/img/hw/img_64.png" width=400 > | <img src="/History/img/hw/img_65.png" width=400 > |
