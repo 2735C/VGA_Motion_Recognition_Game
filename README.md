@@ -239,6 +239,13 @@ x pixel의 위치가 왼쪽이면 0, 오른쪽이면 1 출력 <br>
 
 (2) 패턴 구현 자동화 스크립트 (Python)
 
+Issue
+초기에는 수동으로 단순히 화면의 좌표를 직접 추출해 hex 코드로 변환해서 업로드
+
+→ 측정오차, 비효율성, 일관성 부족
+
+이러한 문제들을 해결하기 위해 파이썬을 이용해 패턴 구현 자동화 스크립트 구상
+
 Process Flow
 <img src="/History/img/hw/img_104.png" width=300> | 
 --|
@@ -248,6 +255,19 @@ Process Flow
 - 선택한 영역(x범위)에 맞추고 원하는 사이즈로 조정해서 바닥 정렬
 - 꼭짓점을 연결한 선분 좌표를 추출해서 38비트로 packing → .hex 파일로 저장
 - 결과를 미리보기로 확인하고, .hex 파일 다운로드
+
+<img src="/History/img/hw/img_105.png" width=300> | 
+--|
+
+
+Result
+
+|   |초기 ver | 최종 ver|
+<img src="/History/img/hw/img_108.png" width=300 >|<img src="/History/img/hw/img_106.png" width=300 >|<img src="/History/img/hw/img_107.png" width=300 >|
+--|--|-- 
+
+
+
 
 > ### :three: Color Detection Algorithm
 
