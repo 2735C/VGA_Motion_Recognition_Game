@@ -393,7 +393,6 @@ assign s_is_ok = (delta >= (max_val >> 2));
 assign red = r_is_max && s_is_ok;
 ```
 
-
 > ### :four: Uart
 ### Uart Blockdiagram
 
@@ -457,6 +456,10 @@ tx | rx
 | ⑧ 종료/리셋 | 모든 패턴 결과 합산 후 | PC→FPGA | `t` | 스코어보드 반영 완료 → 초기 화면 복귀 (rx) |
 
 ## 시연 영상
+
+| game start | music select | game play
+:--:|:--:|:--:
+| <img src="https://github.com/2735C/VGA_Motion_Recognition_Game/blob/main/History/img/another/game_play_1.gif?raw=true" width="380"> | <img src="https://github.com/2735C/VGA_Motion_Recognition_Game/blob/main/History/img/another/game_play_2.gif?raw=true" width="380"> | <img src="https://github.com/2735C/VGA_Motion_Recognition_Game/blob/main/History/img/another/game_play_3.gif?raw=true" width="380"> |
 
 ## 🚀Trouble Shooting 
 [⚒️[Trouble_Shooting1]](/History/trouble_shooting/Trouble_Shooting1.md)   <br>
