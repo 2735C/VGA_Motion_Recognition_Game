@@ -10,7 +10,7 @@
 
 이러한 문제들을 해결하기 위해 파이썬을 이용해 패턴 구현 자동화 스크립트 구상
 
-#### Process Flow
+> #### Process Flow
 
 <img src="/History/img/hw/img_104.png" width=300> | 
 --|
@@ -22,15 +22,15 @@
 - 꼭짓점을 연결한 선분 좌표를 추출해서 38비트로 packing → .hex 파일로 저장
 - 결과를 미리보기로 확인하고, .hex 파일 다운로드
 
-<img src="/History/img/hw/img_105.png" width=300> | 
+<img src="/History/img/hw/img_105.png" width=500> | 
 --|
 
 
-#### Result
+> #### Result
 
 |그림   |초기 ver | 최종 ver|
 --|--|-- 
-<img src="/History/img/hw/img_108.png" width=300 >|<img src="/History/img/hw/img_106.png" width=300 >|<img src="/History/img/hw/img_107.png" width=300 >|
+<img src="/History/img/hw/img_108.png" width=200 >|<img src="/History/img/hw/img_106.png" width=300 >|<img src="/History/img/hw/img_107.png" width=300 >|
 
 :arrow_right:  Auto pipeline 과정으로 정확성, 효율성, 일관성 확보
 
