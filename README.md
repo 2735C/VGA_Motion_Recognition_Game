@@ -300,10 +300,9 @@ assign red = r_is_max && s_is_ok;
 <img src="/History/img/hw/img_52.png" width=600 > | <img src="/History/img/hw/img_53.png" width=600 >
 --|--
 
-### Uart Sender FSM
-
-<img src="/History/img/hw/img_54.png" width=600 >|
---|
+* 동일한 문자열을 **2초 동안 0.25초 간격(총 8회)**로 *연속* 전송하면 게이지가 0→100%로 차며,  
+**Python GUI State**와 **FPGA 게임 FSM State**가 동시에 다음 단계로 전이.  
+* 한 번이라도 **미수신/오수신/간격 위반**이 발생하면 **게이지는 0%로 즉시 리셋**.
 
 <!--
 |       구분      | 코드/비트 | 조건                | 송신 문자열 |
@@ -324,13 +323,17 @@ assign red = r_is_max && s_is_ok;
 |'t'        | uart_sig = 1 |
 -->
 
-tx | rx
---|--
-<img src="/History/img/hw/img_55.png" width=400 > | <img src="/History/img/hw/img_56.png" width=200 > 
+Uart Sender FSM| tx | rx
+--|--|--
+<img src="/History/img/hw/img_54.png" width=400 >|<img src="/History/img/hw/img_55.png" width=400 > | <img src="/History/img/hw/img_56.png" width=200 > 
+
+<!--
 
 * 동일한 문자열을 **2초 동안 0.25초 간격(총 8회)**로 *연속* 전송하면 게이지가 0→100%로 차며,  
 **Python GUI State**와 **FPGA 게임 FSM State**가 동시에 다음 단계로 전이.  
 * 한 번이라도 **미수신/오수신/간격 위반**이 발생하면 **게이지는 0%로 즉시 리셋**.
+
+-->
 
 | 'qstick' | 'golden' | 'sodapop' |
 |:---:|:---:|:---:|
