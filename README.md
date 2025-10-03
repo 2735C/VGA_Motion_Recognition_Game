@@ -358,6 +358,14 @@ Uart Sender FSM
 |                 | 1         | result[1] == 1      | 'GOOD'     |
 |                 | 2         | result[2] == 1      | 'PERFECT'  |
 
+| 수신 문자열 | FSM 제어 신호 |
+|:---------:|:------------:|
+|'g'        | uart_sig = 1 |
+|'s'        | uart_sig = 2 |
+|'p'        | uart_sig = 3 |
+|'f'        | uart_sig = 4 |
+|'t'        | uart_sig = 5 |
+
 <img src="/History/img/hw/img_55.png" width=300 >
 
 > ### :five: Game FSM
