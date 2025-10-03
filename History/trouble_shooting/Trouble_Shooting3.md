@@ -42,8 +42,8 @@ $x =\\frac{(y_{\text{pixel}} - y_{\min})}{dy} \times dx$
 
 | [Before] LUT 158% | [After] LUT 96% |
 --|--
-<img src="/History/img/hw/img_4.png" width=600 >|<img src="/History/img/hw/img_5.png" width=600 >|
-<img src="/History/img/hw/img_3.png" width=600 >|<img src="/History/img/hw/img_6.png" width=600 >|
+<img src="/History/img/hw/img_4.png" width=400 >|<img src="/History/img/hw/img_5.png" width=400 >|
+<img src="/History/img/hw/img_3.png" width=400 >|<img src="/History/img/hw/img_6.png" width=400 >|
 
 #### hit 결정:
 :arrow_right:  현재 픽셀이 선분 y 범위 안에 있으면서, 픽셀 x가 선분과 교차하는 x보다 오른쪽에 있는 경우 hit = 1.
