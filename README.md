@@ -356,3 +356,7 @@ assign red = r_is_max && s_is_ok;
 [⚒️[Trouble_Shooting3]](/History/trouble_shooting/Trouble_Shooting3.md) <br>
 
 
+## 활용 분야
+- **Home Fitness / Smart Home IoT**: 집에서 쉽게 따라하는 체조 및 동작 인식  
+- **안전 모니터링**: 낙상 방지—지정 영역 이탈 감지 알람
+- **K-POP 챌린지**: 점수 공유/영상 업로드로 **SNS 확산** 기대
