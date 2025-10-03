@@ -5,7 +5,7 @@
 
 |Team Leader|Team Member1|Team Member2| 
 --|--|--|
-| [<img src="/History/img/another/profile_1.png" width=150 > </br> @문우진](https://github.com/) |  [<img src="/History/img/another/profile_2.png" width=150 > </br> @김병현](https://github.com/)|  [<img src="/History/img/another/profile_3.png" width=150 > </br> @김을중](https://github.com/)| 
+| [<img src="/History/img/another/profile_1.png" width=150 > </br> @문우진](https://github.com/) |  [<img src="/History/img/another/profile_2.jpg" width=150 > </br> @Kim ByeonHyeon](https://bhyeon1.github.io/)|  [<img src="/History/img/another/profile_3.png" width=150 > </br> @김을중](https://github.com/)| 
 
 |Team Member3|Team Member4|Team Member5|Team Member6| 
 --|--|--|--|
