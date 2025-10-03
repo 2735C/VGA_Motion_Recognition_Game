@@ -8,6 +8,6 @@
 ### 2️⃣ 예상 원인
 - UART RX_DATA 수신 Error ➡️ UART Simulation 결과 정상 
 
-<img src="https://raw.githubusercontent.com/2735C/VGA_Motion_Recognition_Game/main/History/img/hw/img_67.png" width="500">
+| <img src="https://raw.githubusercontent.com/2735C/VGA_Motion_Recognition_Game/main/History/img/hw/img_67.png" width="500"> |
 
 - FSM 이동 조건 타이밍 Miss ➡️ FSM 구조 집중 수정
