@@ -4,11 +4,11 @@
 
 
 |Team Leader|Team Member1|Team Member2| 
---|--|--|
+:--:|:--:|:--:|
 | [<img src="/History/img/another/profile_1.png" width=150 > </br> @문우진](https://github.com/) |  [<img src="/History/img/another/profile_2.jpg" width=150 > </br> @Kim ByeonHyeon](https://bhyeon1.github.io/)|  [<img src="/History/img/another/profile_3.png" width=150 > </br> @김을중](https://github.com/)| 
 
 |Team Member3|Team Member4|Team Member5|Team Member6| 
---|--|--|--|
+:--:|:--:|:--:|:--:|
 | [<img src="/History/img/another/profile_4.png" width=150 > </br> @박승범](https://github.com/) |  [<img src="/History/img/another/profile_5.png" width=150 > </br> @안재용](https://github.com/)| [<img src="/History/img/another/profile_6.png" width=150 > </br> @오정일](https://github.com/) |  [<img src="/History/img/another/profile_7.jpg" width=150 > </br> @Jung EunJi](https://github.com/2735C)|
 
 
@@ -384,8 +384,10 @@ tx | rx
 |:---:|:---:|:---:|
 | <img src="/History/img/hw/img_58.png" width=400 > | <img src="/History/img/hw/img_59.png" width=400 > | <img src="/History/img/hw/img_60.png" width=400 > |
 
-## 시연 영상
+### UART RX 패턴
+문자를 **한 번**만 받으면 
 
+## 시연 영상
 
 ## 🚀Trouble Shooting 
 [⚒️[Trouble_Shooting1]](/History/trouble_shooting/Trouble_Shooting1.md)   <br>
