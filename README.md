@@ -323,13 +323,13 @@ C_{\min} = \min(R', G', B'), \quad
 $$
 S = 
 \begin{cases} 
-0, & C_{\max} = 0 \\[1mm]
+0, & C_{\max} = 0 \\
 \frac{\Delta}{C_{\max}}, & C_{\max} \neq 0 
 \end{cases}
 $$
 
 
-활용: 색조 및 채도 계산 방법 
+활용: 색조 및 채도 계산 방법 <br>
 차이점: bit 수 변환 없이 원본 데이터 활용 → 데이터 손실, 오염 방지 가능
 
 ```systemverilog
