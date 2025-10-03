@@ -50,30 +50,30 @@
 
 <table style="width:100%; table-layout: fixed; border-collapse: collapse;">
   <tr>
-    <th style="width:25%; border: 1px solid #000;">박승범</th>
-    <th style="width:25%; border: 1px solid #000;">안재용</th>
-    <th style="width:25%; border: 1px solid #000;">오정일</th>
-    <th style="width:25%; border: 1px solid #000;">정은지</th>
+    <th style="width:25%; border: 1px solid #000; word-wrap: break-word;">박승범</th>
+    <th style="width:25%; border: 1px solid #000; word-wrap: break-word;">안재용</th>
+    <th style="width:25%; border: 1px solid #000; word-wrap: break-word;">오정일</th>
+    <th style="width:25%; border: 1px solid #000; word-wrap: break-word;">정은지</th>
   </tr>
   <tr>
-    <td style="border: 1px solid #000;">
+    <td style="border: 1px solid #000; word-wrap: break-word;">
       ‣ GUI 제작(디자인)<br>
       ‣ 전처리 필터 설계 (Median)<br>
       ‣ PIP, Ray Crossing 알고리즘 설계<br>
       ‣ Basys3 기반 Top module Merge
     </td>
-    <td style="border: 1px solid #000;">
+    <td style="border: 1px solid #000; word-wrap: break-word;">
       ‣ HDMI Interface 설계<br>
       ‣ AXI4 Protocol 기반 PL, PS설계 (Zybo Board)<br>
       ‣ Basys3 기반 Top module Merge
     </td>
-    <td style="border: 1px solid #000;">
+    <td style="border: 1px solid #000; word-wrap: break-word;">
       ‣ 전처리 필터 설계 (Sobel)<br>
       ‣ Systemverilog 기반 검증<br>
       ‣ Game Pattern 제작 (Python)<br>
       ‣ Pattern FSM 구조 설계
     </td>
-    <td style="border: 1px solid #000;">
+    <td style="border: 1px solid #000; word-wrap: break-word;">
       ‣ GUI 제작(랭킹 보드)<br>
       ‣ 전처리 필터 설계 (Sobel)<br>
       ‣ Systemverilog 기반 검증<br>
@@ -82,8 +82,6 @@
     </td>
   </tr>
 </table>
-
-
 
 <!--
 문우진 | 김병현 | 김을중|
