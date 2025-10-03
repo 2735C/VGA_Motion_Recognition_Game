@@ -22,6 +22,13 @@ $$
 $$
 
 ### 원인
-결
+<img src="/History/img/hw/img_115.png" width=300> 
+
+Porch 영역까지 Count 되어서 생각했던 것보다 더 많은 Red가 Count됨.
+
+* Porch 영역 : Display 영역 출력 전/후 Sync를 맞추기 위한 Margin영역
+역
+
 ### 해결
 
+VGA Decoder의 DE 신호를 받아서 처리 -> 유효한 픽셀의 수만 Count(640x480)
