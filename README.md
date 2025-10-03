@@ -322,7 +322,8 @@ $C_{\max} = \max(R', G', B'), \quad
 C_{\min} = \min(R', G', B'), \quad 
 \Delta = C_{\max} - C_{\min}$
 
-$S = \frac{\Delta}{C_{\max}}, & C_{\max} \neq 0 $
+$S = \frac{\Delta}{C_{\max}} \quad \text{if } C_{\max} \neq 0$
+
 
 
 활용: 색조 및 채도 계산 방법 <br>
