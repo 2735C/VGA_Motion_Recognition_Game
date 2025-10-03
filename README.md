@@ -318,20 +318,16 @@ assign red = (r5 >= 12) && (g6 <= 6) && (b5 <= 6);
 
 #### RGB :arrow_right: HSV 변환 공식 활용
 
-\begin{tabular}{|l|}
-\hline
 $C_{\max} = \max(R', G', B'), \quad 
 C_{\min} = \min(R', G', B'), \quad 
-\Delta = C_{\max} - C_{\min}$ \\
-\hline
-$S = \frac{\Delta}{C_{\max}} \quad \text{if } C_{\max} \neq 0$ \\
-\hline
-\end{tabular}
+\Delta = C_{\max} - C_{\min}$
+
+$S = \frac{\Delta}{C_{\max}} \quad \text{if } C_{\max} \neq 0$
 
 
 
-활용: 색조 및 채도 계산 방법 <br>
-차이점: RGB666으로 최대한 원본 데이터 활용 → 데이터 손실, 오염 방지 가능
+> 활용: 색조 및 채도 계산 방법 <br>
+> 차이점: RGB666으로 최대한 원본 데이터 활용 → 데이터 손실, 오염 방지 가능
 
 ```systemverilog
 // rgb666
