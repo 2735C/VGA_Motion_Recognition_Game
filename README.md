@@ -228,7 +228,7 @@ x pixel의 위치가 왼쪽이면 0, 오른쪽이면 1 출력 <br> <br>
 
 <img src="/History/img/hw/img_102.png" width=300 >|<img src="/History/img/hw/img_103.png" width=300 >|
 --|-- 
-<br> <br>
+
 
 총 30개의 Module 병렬 실행 → Pattern 제작 <br>
 Pattern 내부 = 1, 외부 = 0 출력
