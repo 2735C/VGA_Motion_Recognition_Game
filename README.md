@@ -30,9 +30,9 @@
 ### :one: 프로젝트 선정 배경
 
 
-> 문제 인식 : 현대 사회에 들어 지속적으로 증가하는 우울감과 스트레스
+- 문제 인식 : 현대 사회에 들어 지속적으로 증가하는 우울감과 스트레스
 
-> 해결 방안 : 글로벌 시장에서 큰 인기를 얻고 있는 K-POP을 통해 스트레스 해소 및 긍정적인 에너지를 전달.
+- 해결 방안 : 글로벌 시장에서 큰 인기를 얻고 있는 K-POP을 통해 스트레스 해소 및 긍정적인 에너지를 전달.
 
 ##
 
@@ -46,7 +46,7 @@
       <img src="https://github.com/2735C/VGA_Motion_Recognition_Game/blob/main/History/img/another/game_1.gif?raw=true" width="380" alt="게임 화면">
     </td>
     <td width="400">
-      <br><br>
+      <br>
       <span style="font-size:25px; font-weight:bold;">:one: 패턴을 확인한다. </span><br><br>
       <span style="font-size:25px; font-weight:bold;">:two: 패턴에 맞춰 몸을 맞춘다. </span><br><br>
       <span style="font-size:25px; font-weight:bold;">:three: 점수를 확인한다. </span><br><br>
