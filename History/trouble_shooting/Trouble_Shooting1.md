@@ -3,7 +3,7 @@
 ### 🔥 문제: 평가 기준 Perfect/Good/Bad 중 Bad만 출력되는 현상 
 
 
-<img src="https://github.com/2735C/VGA_Motion_Recognition_Game/blob/main/History/img/another/game_2.gif?raw=true" width="380">
+![게임 화면](https://github.com/2735C/VGA_Motion_Recognition_Game/blob/main/History/img/another/game_2.gif?raw=true)
 
 
 > #### 세부 문제
