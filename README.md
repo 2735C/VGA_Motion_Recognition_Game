@@ -46,6 +46,7 @@
       <img src="https://github.com/2735C/VGA_Motion_Recognition_Game/blob/main/History/img/another/game_1.gif?raw=true" width="380" alt="게임 화면">
     </td>
     <td width="400">
+      <br><br>
       <span style="font-size:25px; font-weight:bold;">:one: 패턴을 확인한다. </span><br><br>
       <span style="font-size:25px; font-weight:bold;">:two: 패턴에 맞춰 몸을 맞춘다. </span><br><br>
       <span style="font-size:25px; font-weight:bold;">:three: 점수를 확인한다. </span><br><br>
@@ -69,8 +70,9 @@
 카메라(OV7670) → Basys3(PL) → VGA/HDMI 출력
 **UART**를 통해 PC(Python GUI)와 통신
 
-- Toolchain: Vivado 2020.2, Xilinx Vitis / VS Code
-- HW: Basys3, OV7670, VGA→HDMI 케이블, 캡쳐 보드
+- **Toolchain**: Vivado 2020.2, Xilinx Vitis / VS Code
+- **HW**: Basys3, OV7670, VGA→HDMI 케이블, 캡쳐 보드
+- **Language**: systemverilog, python
 
 <!--
 
@@ -145,7 +147,7 @@ K-POP DEMON HUNTERS의 춤추는 동작을 바탕으로한 모션 인식 게임�
 
 ## 프로젝트 과정
 
-> 더 많은 내용을 확인하고 싶으면 --> [[발표 자료]](/Report/AI시스템반도체_발표용_1조_우리함께춤을.pdf)
+**더 많은 내용을 확인하고 싶으면 -->** [[발표 자료]](/Report/AI시스템반도체_발표용_1조_우리함께춤을.pdf)
 
  <!--
 
@@ -170,9 +172,10 @@ PERFECT|GOOD|BAD|
 
 -->
 
-> ### :one: Filter
+> ### :one: 전처리 필터
 
-#### (1) 전처리 필터 (Median / Gaussian)
+
+#### (1) Median / Gaussian Filter
 
 소벨 필터의 노이즈 민감성을 보완하기 위해, 경계 검출 전에 스무딩(smoothing) 필터를 적용.
 | 항목 | Median | Gaussian |
@@ -190,7 +193,7 @@ PERFECT|GOOD|BAD|
 ```systemverilog
 Sort #(.WIDTH(5)) U_Sort_R ( .din (r_data), .dout(sort_r_data)); // Red
 Sort #(.WIDTH(6)) U_Sort_G ( .din (g_data), .dout(sort_g_data)); // Green
-Sort #(.WIDTH(5)) U_Sort_B ( .din (b_data), .dout(sort_b_data));  // Blue
+Sort #(.WIDTH(5)) U_Sort_B ( .din (b_data), .dout(sort_b_data)); // Blue
 
 assign Median_result = {sort_r_data[4], sort_g_data[4], sort_b_data[4]};
 ```
@@ -220,7 +223,7 @@ assign Gaussian_Result = {red, green, blue};
 
 #### 🤔 Edge 검출 원리 
 
-Centered Difference: $\frac{\partial I}{\partial x} = \frac{I(x+h) - I(x-h)}{2h}$
+**Centered Difference:** $\frac{\partial I}{\partial x} = \frac{I(x+h) - I(x-h)}{2h}$
 
 > 가운데를 기준으로 양쪽 값을 사용해 기울기 계산 → 편향 감소, 정확도 향상으로 안정적인 경계 검출 및 노이즈에 강함
 
@@ -245,7 +248,8 @@ assign sdata = (absx + absy > threshold) ? 1 : 0;
 > ### :two: Parttern Algorithm
 
 #### (1) Point In Polygon
-- 어떤 점(Point)이 다각형(Polygon) 내부에 있는지 판별 <br>
+
+어떤 점(Point)이 다각형(Polygon) 내부에 있는지 판별 <br>
 
 |내/외부 판별 Algorithm | 핵심 기술|
 --|--
@@ -254,9 +258,9 @@ assign sdata = (absx + absy > threshold) ? 1 : 0;
 |Triangle Fan | 삼각 분할 Data, Barycentric 좌표 연산|
 |Bounding Volume | 사각 Grid, 공간 분할 연산|
 
-> 여러 Algorithm 후보들 중에서 제한된 리소스를 가지고 구현할 수 있는 Ray Crossing 사용
+☑️ 여러 Algorithm 후보들 중에서 제한된 리소스를 가지고 구현할 수 있는 Ray Crossing 사용
 
-- #### Ray Crossing
+#### (2) Ray Crossing
 
 <img src="/History/img/hw/img_101.png" width=300> | <img src="/History/img/hw/img_102.png" width=300 >|<img src="/History/img/hw/img_103.png" width=300 >|
 --|--|-- 
