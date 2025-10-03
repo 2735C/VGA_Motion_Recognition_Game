@@ -231,9 +231,9 @@ x pixel의 위치가 왼쪽이면 0, 오른쪽이면 1 출력 <br> <br>
 --|-- 
 
 
-(x1, )
-총 30개의 Module 병렬 실행 → Pattern 제작 <br>
-x축에서 x좌표가 증가할 때마다 hit 횟수 Check (XOR 연산 : 홀수번 Hit = 1,짝수번 Hit = 0) <br>
+1) (x1,y1), (x2,y2) 두 점의 좌표 한 쌍으로 한 개의 선분 생성 <br>
+2) 총 30개의 Module 병렬 실행 → Pattern 제작 <br>
+3) x축에서 x좌표가 증가할 때마다 hit 횟수 Check (XOR 연산 : 홀수번 Hit = 1,짝수번 Hit = 0) <br> <br>
 > Pattern 내부 = 1, 외부 = 0 출력
 
 
