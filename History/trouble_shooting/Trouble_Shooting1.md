@@ -20,9 +20,9 @@
 --|
 (Pattern 외부) & (Chroma 영역 X) : Red Count ++ |
 
-$
+$$
 \text{Score} = \frac{\textcolor{green}{\text{Green cnt}}}{\textcolor{green}{\text{Green cnt}} + \textcolor{red}{\text{Red cnt}}} \times 100
-$
+$$
 
 ### ❗원인
 <img src="/History/img/hw/img_115.png" width=300> |
