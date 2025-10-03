@@ -11,6 +11,7 @@
 1. **로직**에 **문제**가 존재
 2. 하지만, 로직을 수정하기에는 이미 **LUT**가 **99%**
 
+##
 
 ### 🤩 문제 해결 1: LUT 축소 (4% 🔽)
 
@@ -37,6 +38,8 @@ logic [22:0] sum = temp_grn_cnt_reg + temp_red_cnt_reg;
 // result = {perfect, good, bad}
 assign result =  (temp_grn_cnt_reg * 5 >= (sum << 2)) ? 3'b100 : ((temp_grn_cnt_reg << 1) < sum) ? 3'b001 : 3'b010; 
 ```
+
+##
 
 ### 🤩 문제 해결 2:  Porch 영역 Count 배제
 

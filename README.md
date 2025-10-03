@@ -436,7 +436,7 @@ Uart Sender FSM| tx | rx
 
 
 
-## 시연 영상
+## 🎥 시연 영상
 
 | Game Start | Music Select |
 |:--:|:--:|
@@ -446,13 +446,21 @@ Uart Sender FSM| tx | rx
 |:--:|
 | <img src="https://raw.githubusercontent.com/2735C/VGA_Motion_Recognition_Game/main/History/img/another/game_play_3.gif" width="380"> |
 
+
+## 💡활용 분야
+
+- **Home Fitness / Smart Home IoT**: 집에서 쉽게 따라하는 체조 및 동작 인식
+- **안전 모니터링**: 낙상 방지—지정 영역 이탈 감지 알람
+- **K-POP 챌린지**: 점수 공유/영상 업로드로 **SNS 확산** 기대
+
+
 ## 🚀Trouble Shooting 
 [⚒️[점수 계산 Error]](/History/trouble_shooting/Trouble_Shooting1.md)   <br>
-[⚒️[GAME STATE 전환 불능]](/History/trouble_shooting/Trouble_Shooting2.md)  <br>
-[⚒️[Pattern 구현 Module 리소스 부족]](/History/trouble_shooting/Trouble_Shooting3.md) <br>
+[⚒️[GAME STATE 전이 실패]](/History/trouble_shooting/Trouble_Shooting2.md)  <br>
+[⚒️[Pattern 구현 Module 리소스 초과]](/History/trouble_shooting/Trouble_Shooting3.md) <br>
 [⚒️[패턴 구현 자동화 스크립트 (Python)]](/History/trouble_shooting/Trouble_Shooting7.md) <br>
+[⚒️[Clock Domain Crossing Issue]](/History/trouble_shooting/Trouble_Shooting4.md) <br>
 
 추가 가능 ~~ <br>
-[⚒️[Trouble_Shooting4]](/History/trouble_shooting/Trouble_Shooting4.md) <br>
 [⚒️[Trouble_Shooting5]](/History/trouble_shooting/Trouble_Shooting5.md) <br>
 [⚒️[Trouble_Shooting6]](/History/trouble_shooting/Trouble_Shooting6.md) <br>
