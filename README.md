@@ -224,7 +224,7 @@ assign sdata = (absx + absy > threshold) ? 1 : 0;
 
 
 두쌍의 좌표를 입력 받아서 가상의 선분 생성 <br>
-x pixel의 위치가 왼쪽이면 0, 오른쪽이면 1 출력 <br> <br>
+x pixel의 위치가 왼쪽이면 0, 오른쪽이면 1 출력 <br>
 
 
 <img src="/History/img/hw/img_102.png" width=300 >|<img src="/History/img/hw/img_103.png" width=300 >|
@@ -233,7 +233,7 @@ x pixel의 위치가 왼쪽이면 0, 오른쪽이면 1 출력 <br> <br>
 
 1) (x1,y1), (x2,y2) 두 점의 좌표 한 쌍으로 한 개의 선분 생성 <br>
 2) 총 30개의 Module 병렬 실행 → Pattern 제작 <br>
-3) x축에서 x좌표가 증가할 때마다 hit 횟수 Check (XOR 연산 : 홀수번 Hit = 1,짝수번 Hit = 0) <br> <br>
+3) x축에서 x좌표가 증가할 때마다 hit 횟수 Check (XOR 연산 : 홀수번 Hit = 1,짝수번 Hit = 0) <br>
 > Pattern 내부 = 1, 외부 = 0 출력
 
 
