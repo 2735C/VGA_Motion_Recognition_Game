@@ -146,7 +146,7 @@ Centered Difference: $\frac{\partial I}{\partial x} = \frac{I(x+h) - I(x-h)}{2h}
 
 |가로 방향 | 세로 방향|
 --|--
-<img src="/History/img/hw/img_1.png" width=300 >|<img src="/History/img/hw/img_2.png" width=300 >|
+<img src="/History/img/hw/img_1.png" width=150 >|<img src="/History/img/hw/img_2.png" width=150 >|
 
 ```systemverilog
 localparam threshold = 1500;
