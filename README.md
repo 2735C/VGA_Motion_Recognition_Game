@@ -322,19 +322,14 @@ $C_{\max} = \max(R', G', B'), \quad
 C_{\min} = \min(R', G', B'), \quad 
 \Delta = C_{\max} - C_{\min}$
 
-$
-S = 
-\begin{cases} 
-0, & C_{\max} = 0 \\
-\frac{\Delta}{C_{\max}}, & C_{\max} \neq 0 
-\end{cases}
-$
+$S = \frac{\Delta}{C_{\max}}, & C_{\max} \neq 0 $
 
 
 활용: 색조 및 채도 계산 방법 <br>
 차이점: RGB666으로 최대한 원본 데이터 활용 → 데이터 손실, 오염 방지 가능
 
 ```systemverilog
+// rgb666
 assign max_val = (r6 > g6) ? ((r6 > b6) ? r6 : b6) : ((g6 > b6) ? g6 : b6);
 assign min_val = (r6 < g6) ? ((r6 < b6) ? r6 : b6) : ((g6 < b6) ? g6 : b6);
 assign delta = max_val - min_val;
