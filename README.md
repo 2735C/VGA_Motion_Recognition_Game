@@ -376,14 +376,14 @@ tx | rx
 
 <img src="/History/img/hw/img_57.png" width=800 >
 
-### UART 입력 패턴 (공통 전송 규칙)
-> **모든 동작은 동일한 전송 규칙을 따름:** 2초 동안 **0.25초 간격**으로 동일 문자열 반복 전송 (총 **8회**)
+### UART TX 패턴
+동일한 문자열을 **2초 동안 0.25초 간격(총 8회)**로 *연속* 수신하면 게이지가 0→100%로 차며,  
+**Python GUI State**와 **FPGA 게임 FSM State**가 동시에 다음 단계로 전이.  
+한 번이라도 **미수신/오수신/간격 위반**이 발생하면 **게이지는 0%로 즉시 리셋**.
 
-| 동작 | 전송 문자열 | 미리보기 |
+| 'qstick' | 'golden' | 'sodapop' |
 |:---:|:---:|:---:|
-| Start | `qstick` | <img src="/History/img/hw/img_58.png" width="300" alt="qstick start"> |
-| Golden 곡 선택 | `golden` | <img src="/History/img/hw/img_59.png" width="300" alt="golden select"> |
-| Sodapop 곡 선택 | `sodapop` | <img src="/History/img/hw/img_60.png" width="300" alt="sodapop select"> |
+| <img src="/History/img/hw/img_58.png" width=400 > | <img src="/History/img/hw/img_59.png" width=400 > | <img src="/History/img/hw/img_60.png" width=400 > |
 
 ## 시연 영상
 
