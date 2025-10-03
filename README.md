@@ -371,12 +371,7 @@ tx | rx
 --|--
 <img src="/History/img/hw/img_55.png" width=400 > | <img src="/History/img/hw/img_56.png" width=200 > 
 
-> ### :five: Game FSM
-
-<img src="/History/img/hw/img_57.png" width=800 >
-
-### UART TX 패턴
-동일한 문자열을 **2초 동안 0.25초 간격(총 8회)**로 *연속* 수신하면 게이지가 0→100%로 차며,  
+동일한 문자열을 **2초 동안 0.25초 간격(총 8회)**로 *연속* 전송하면 게이지가 0→100%로 차며,  
 **Python GUI State**와 **FPGA 게임 FSM State**가 동시에 다음 단계로 전이.  
 한 번이라도 **미수신/오수신/간격 위반**이 발생하면 **게이지는 0%로 즉시 리셋**.
 
@@ -384,8 +379,28 @@ tx | rx
 |:---:|:---:|:---:|
 | <img src="/History/img/hw/img_58.png" width=400 > | <img src="/History/img/hw/img_59.png" width=400 > | <img src="/History/img/hw/img_60.png" width=400 > |
 
-### UART RX 패턴
-문자를 **한 번**만 받으면 
+| 'PERFECT' | 'GOOD' | 'BAD' |
+|:---:|:---:|:---:|
+| <img src="/History/img/hw/img_63.png" width=400 > | <img src="/History/img/hw/img_64.png" width=400 > | <img src="/History/img/hw/img_65.png" width=400 > |
+
+> ### :five: Game FSM
+
+<img src="/History/img/hw/img_57.png" width=800 >
+
+### 게임 통신 흐름 요약
+- Start 게이지 성공 후 **곡 선택** → 카운트다운 종료 시 곡 확정(PC→FPGA) → **게임 진행(패턴 7개)**: 매 패턴마다 `p`(tick) 수신 → FPGA가 점수 판단 후 문자열 전송 → PC가 연출 끝내고 `f`(finish) 전송 → 모든 패턴 종료 후 점수 반영 및 초기화(`t`).
+
+### 단계별 메시지 흐름
+| 단계 | 트리거/타이밍 | 방향 | 토큰 | 의미 |
+|---|---|---|---|---|
+| ① Start | 게이지 규칙 충족(8/8) | PC→FPGA | `qstick` | 시작 승인(이전 단계에서 완료) |
+| ② 곡 선택 | `golden` 또는 `sodapop` 게이지 규칙 충족 | PC→FPGA | `golden` / `sodapop` | 곡 후보 전달 |
+| ③ 곡 확정 | **3,2,1 카운트다운 끝나는 순간** | PC→FPGA | `g` / `s` | Golden/Sodapop 최종 확정 (rx) |
+| ④ 게임 진행(루프) | **5,4,3,2,1 카운트다운 각 1초 끝** | PC→FPGA | `p` | 한 패턴의 판정 시점 도달 (rx) |
+| ⑤ 판정 결과 | ④ 이후 즉시 | FPGA→PC | `BAD` / `GOOD` / `PERFECT` | 패턴 일치율 기반 판정 송신 (tx) |
+| ⑥ 연출 종료 알림 | 결과 화면 연출이 끝나는 순간 | PC→FPGA | `f` | 해당 패턴 연출 종료 (rx) |
+| ⑦ 반복 | 총 **7패턴**에 대해 ④~⑥ 반복 | — | — | `p→(결과)→f` 를 **7회** 수행 |
+| ⑧ 종료/리셋 | 모든 패턴 결과 합산 후 | PC→FPGA | `t` | 스코어보드 반영 완료 → 초기 화면 복귀 (rx) |
 
 ## 시연 영상
 
