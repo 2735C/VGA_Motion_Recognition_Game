@@ -242,7 +242,6 @@ assign sdata = (absx + absy > threshold) ? 1 : 0;
 <!--
 • 두쌍의 좌표를 입력 받아서 가상의 선분 생성 <br>
 • x pixel의 위치가 왼쪽이면 0, 오른쪽이면 1 출력 <br>
-
 -->
 
 1) (x1,y1), (x2,y2) 두 점의 좌표 한 쌍으로 한 개의 선분 생성 <br>
@@ -392,7 +391,7 @@ tx | rx
 [⚒️[Trouble_Shooting1]](/History/trouble_shooting/Trouble_Shooting1.md)   <br>
 [⚒️[Trouble_Shooting2]](/History/trouble_shooting/Trouble_Shooting2.md)  <br>
 [⚒️[Trouble_Shooting3]](/History/trouble_shooting/Trouble_Shooting3.md) <br>
-
+[⚒️[Trouble_Shooting4]](/History/trouble_shooting/Trouble_Shooting4.md) <br>
 
 ## 활용 분야
 - **Home Fitness / Smart Home IoT**: 집에서 쉽게 따라하는 체조 및 동작 인식  
