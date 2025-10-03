@@ -146,30 +146,19 @@ PERFECT|GOOD|BAD|
 --|-- 
 <img src="/History/img/hw/img_50.png" width=200 >|<img src="/History/img/hw/img_51.png" width=200 >|
 
+#### median filter
+
 ```systemverilog
-// ----------------------------------------------
-//                 median filter
-// ----------------------------------------------
-Sort #(.WIDTH(5)) U_Sort_R (  // Red
-        .din (r_data),  // 5비트
-        .dout(sort_r_data)
-    );
-
-Sort #(.WIDTH(6)) U_Sort_G (  // Green
-    .din (g_data),  // 6비트
-    .dout(sort_g_data)
-);
-
-Sort #(.WIDTH(5)) U_Sort_B (  // Blue
-    .din (b_data),  // 5비트
-    .dout(sort_b_data)
-);
+Sort #(.WIDTH(5)) U_Sort_R ( .din (r_data), .dout(sort_r_data)); // Red
+Sort #(.WIDTH(6)) U_Sort_G ( .din (g_data), .dout(sort_g_data)); // Green
+Sort #(.WIDTH(5)) U_Sort_B ( .din (b_data), .dout(sort_b_data));  // Blue
 
 assign Median_result = {sort_r_data[4], sort_g_data[4], sort_b_data[4]};
+```
 
-// ----------------------------------------------
-//                gaussian filter
-// ----------------------------------------------
+####  gaussian filter
+
+```systemverilog
 assign red = (r_data[0] >> 4) + (r_data[1] >> 3) + (r_data[2] >> 4) + 
                  (r_data[3] >> 3) + (r_data[4] >> 1) + (r_data[5] >> 3) + 
                  (r_data[6] >> 4) + (r_data[7] >> 3) + (r_data[8] >> 4);
@@ -183,7 +172,6 @@ assign blue = (b_data[0] >> 4) + (b_data[1] >> 3) + (b_data[2] >> 4) +
                   (b_data[6] >> 4) + (b_data[7] >> 3) + (b_data[8] >> 4);
 
 assign Gaussian_Result = {red, green, blue};
-
 ```
 
 #### (2) Sobel Filter
@@ -263,10 +251,6 @@ assign s_is_ok = (delta >= (max_val >> 2));
 
 assign red = r_is_max && s_is_ok;
 ```
-
-
-
-
 
 
 > ### :four: Uart
