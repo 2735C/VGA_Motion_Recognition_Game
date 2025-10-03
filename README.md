@@ -133,20 +133,21 @@ PERFECT|GOOD|BAD|
 
 #### (1) 전처리 필터 (Median / Gaussian)
 
+소벨 필터의 노이즈 민감성을 보완하기 위해, 경계 검출 전에 스무딩(smoothing) 필터를 적용.
 | 항목 | Median | Gaussian |
 |---|---|---|
 | 주 타겟 노이즈 | Salt & Pepper(임펄스) | 센서/가우시안 노이즈 |
 | 작동 방식 | 중앙값 | 가중 평균 |
 | 특징 | 에지 보존 성능 우수 | 연속적 블러, 에지 약화 |
 
-| Median kernal | Gaussian kernal |
+| Median kernal (3x3) | Gaussian kernal (3x3) |
 --|-- 
 <img src="/History/img/hw/img_50.png" width=200 >|<img src="/History/img/hw/img_51.png" width=200 >|
 
 ```systemverilog
-// -------------------------
-//       median filter
-// -------------------------
+// ----------------------------------------------
+//                 median filter
+// ----------------------------------------------
 Sort #(.WIDTH(5)) U_Sort_R (  // Red
         .din (r_data),  // 5비트
         .dout(sort_r_data)
@@ -164,9 +165,9 @@ Sort #(.WIDTH(5)) U_Sort_B (  // Blue
 
 assign Median_result = {sort_r_data[4], sort_g_data[4], sort_b_data[4]};
 
-// -------------------------
-//      gaussian filter
-// -------------------------
+// ----------------------------------------------
+//                gaussian filter
+// ----------------------------------------------
 assign red = (r_data[0] >> 4) + (r_data[1] >> 3) + (r_data[2] >> 4) + 
                  (r_data[3] >> 3) + (r_data[4] >> 1) + (r_data[5] >> 3) + 
                  (r_data[6] >> 4) + (r_data[7] >> 3) + (r_data[8] >> 4);
