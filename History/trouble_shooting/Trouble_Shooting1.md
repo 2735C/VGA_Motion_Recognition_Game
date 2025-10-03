@@ -7,7 +7,7 @@
 - 1. 로직에 문제가 존재
 - 2. 하지만, 로직을 수정하기에는 이미 LUT가 99%
 
-<img src="https://github.com/2735C/VGA_Motion_Recognition_Game/blob/main/History/img/another/game_error_1.gif?raw=true" width="380">
+<img src="https://github.com/2735C/VGA_Motion_Recognition_Game/blob/main/History/img/another/game_2.gif?raw=true" width="380">
 
 
 <br>
@@ -20,16 +20,12 @@
 
 :arrow_right: flag on 되는 순간에 (0,0)부터 flag off 되는 (639, 479)까지 점수로 판별하고자 하는 부분을 Count
 
-<table>
-  <tr>
-    <td><img src="/History/img/hw/img_114.png" width=300></td>
-    <td>
-      (Pattern 내부) & (Chroma 영역 X) : Green Count ++ <br>
-      (Pattern 외부) & (Chroma 영역 X) : Red Count ++ <br>
-      $$ \text{Score} = \frac{\textcolor{green}{\text{Green cnt}}}{\textcolor{green}{\text{Green cnt}} + \textcolor{red}{\text{Red cnt}}} \times 100 $$
-    </td>
-  </tr>
-</table>
+$\text{Score} = \frac{\text{Green cnt}}{\text{Green cnt} + \text{Red cnt}} \times 100$
+
+
+<img src="/History/img/hw/img_114.png" width=300> | (Pattern 내부) & (Chroma 영역 X) : Green Count ++ <br> (Pattern 외부) & (Chroma 영역 X) : Red Count ++ |
+--|--
+
 
 (Pattern 내부) & (Chroma 영역 X) : Green Count ++|
 --|
