@@ -271,7 +271,45 @@ Result
 
 > ### :three: Color Detection Algorithm
 
-> RGB 방식에서 
+> 색 검출 정확도를 올리기 위해서 RGB 방식 :arrow_right: HSV 방식 채택
+
+### RGB 방식
+
+- OpenCV 카메라로 게임에 사용할 빨간 장갑의 RGB 값 탐지
+
+|RGB|8 bit(0~255)|4 bit(approx)(0~15)|
+--|--|--
+R |236| 236 * 15 / 255 ≈ 14
+G |90|  90 * 15 / 255 ≈ 5
+B |100| 100 * 15 / 255 ≈ 6
+
+
+```systemverilog
+assign red = (r >= 12) && (g <= 6) && (b <= 6); // rgb565 = {rgb_data[15:12], rgb_data[10:7], rgb_data[4:1]}
+```
+
+### HSV
+
+레드 | `# FF0000` | (255,0,0)	| (0 °, 100 %, 100 %)
+--|--|--|--
+
+#### RGB :arrow_right: HSV 변환 공식 활용
+
+$C_{\max} = \max(R', G', B'), \quad 
+C_{\min} = \min(R', G', B'), \quad 
+\Delta = C_{\max} - C_{\min}$
+
+<br>
+
+$S = 
+\begin{cases} 
+0, & C_{\max} = 0 \\[1mm]
+\frac{\Delta}{C_{\max}}, & C_{\max} \neq 0 
+\end{cases}$
+
+
+활용: 색조 및 채도 계산 방법 
+차이점: bit 수 변환 없이 원본 데이터 활용 → 데이터 손실, 오염 방지 가능
 
 ```systemverilog
 assign max_val = (r6 > g6) ? ((r6 > b6) ? r6 : b6) : ((g6 > b6) ? g6 : b6);
