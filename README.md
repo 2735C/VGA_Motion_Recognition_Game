@@ -1,4 +1,4 @@
-# AI 반도체 설계 2기 Final Project
+# Let's Dance
 
 ## 팀원 
 
@@ -14,7 +14,20 @@
 
 
 
-## 연구 배경
+## 📝 프로젝트 개요
+
+본 프로젝트는 ISP 알고리즘을 활용한 VGA 영상처리 모션 인식 게임입니다. 
+
+현대 사회는 지속적으로 우울증 환자가 증가하고 있습니다. 연구 결과에 따르면 능동적인 활동은 우울감이 감소시키고 스트레스 해소에 도움이 된다고 합니다.
+따라서, 저희 팀은 "DDR"을 모티브로 하여 최근 전세계적으로 선풍적인 인기를 얻고 있는 "K-POP DEMON HUNTERS" 라는 애니메이션의 춤 동작을 배울 수 있는 모션 인식 게임을 제작했습니다. 
+
+최근 전세계적으로 선풍적인 인기를 얻고 있는 K-POP DEMON HUNTERS라는 애니메이션
+
+<img src="/History/img/another/img_7.png" width=600 >|
+--|
+
+<!--
+
 <img src="/History/img/hw/img_109.png" width=300 >|<img src="/History/img/hw/img_110.png" width=300 >|
 --|--
 
@@ -31,10 +44,17 @@
 --|
 
 K-POP DEMON HUNTERS의 춤추는 동작을 바탕으로한 모션 인식 게임을 통해 우울감, 스트레스 해소에 도움이 되고자 함.
+-->
+
+## 💡 활용 분야
+
+- **Home Fitness / Smart Home IoT**: 집에서 쉽게 따라하는 체조 및 동작 인식  
+- **안전 모니터링**: 낙상 방지—지정 영역 이탈 감지 알람
+- **K-POP 챌린지**: 점수 공유/영상 업로드로 **SNS 확산** 기대
 
 
 
-## Game Rule
+## 🎮 Game Rule
 
 <table>
   <tr>
@@ -56,7 +76,7 @@ K-POP DEMON HUNTERS의 춤추는 동작을 바탕으로한 모션 인식 게임�
 |               | 9/8~9/10| 9/11~9/13| 9/14~9/16|9/17~9/21|9/22~9/23|9/24~26|
 --|--|--|--|--|--|--
 |주제 선정| O|   |  |  |  |  |
-|필터, SCCB 설계|  |  O |  |  |  |  | 
+|전처리 필터, SCCB 설계|  |  O |  |  |  |  | 
 |GUI 설계|  |  | O |  |  |  |
 |HW 설계|  |  | O | O | O |  |
 |GUI 보충 및 HW 최적화|  |  |  |  |  | O |
@@ -69,6 +89,8 @@ K-POP DEMON HUNTERS의 춤추는 동작을 바탕으로한 모션 인식 게임�
 ## 프로젝트 과정
 
 > 더 많은 내용을 확인하고 싶으면 --> [[발표 자료]](/Report/AI시스템반도체_발표용_1조_우리함께춤을.pdf)
+
+ <!--
 
 ### SW
 
@@ -87,6 +109,9 @@ PERFECT|GOOD|BAD|
 
 
 ### HW
+
+
+-->
 
 > ### :one: Filter
 
@@ -353,7 +378,3 @@ tx | rx
 [⚒️[Trouble_Shooting3]](/History/trouble_shooting/Trouble_Shooting3.md) <br>
 [⚒️[Trouble_Shooting4]](/History/trouble_shooting/Trouble_Shooting4.md) <br>
 
-## 활용 분야
-- **Home Fitness / Smart Home IoT**: 집에서 쉽게 따라하는 체조 및 동작 인식  
-- **안전 모니터링**: 낙상 방지—지정 영역 이탈 감지 알람
-- **K-POP 챌린지**: 점수 공유/영상 업로드로 **SNS 확산** 기대
