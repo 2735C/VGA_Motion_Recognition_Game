@@ -447,12 +447,12 @@ Uart Sender FSM| tx | rx
 | <img src="https://raw.githubusercontent.com/2735C/VGA_Motion_Recognition_Game/main/History/img/another/game_play_3.gif" width="380"> |
 
 ## 🚀Trouble Shooting 
-[⚒️[Trouble_Shooting1]](/History/trouble_shooting/Trouble_Shooting1.md)   <br>
-[⚒️[Trouble_Shooting2]](/History/trouble_shooting/Trouble_Shooting2.md)  <br>
-[⚒️[Trouble_Shooting3]](/History/trouble_shooting/Trouble_Shooting3.md) <br>
+[⚒️[점수 계산 Error]](/History/trouble_shooting/Trouble_Shooting1.md)   <br>
+[⚒️[GAME STATE 전환 불능]](/History/trouble_shooting/Trouble_Shooting2.md)  <br>
+[⚒️[Pattern 구현 Module 리소스 부족]](/History/trouble_shooting/Trouble_Shooting3.md) <br>
+[⚒️[Trouble_Shooting7]](/History/trouble_shooting/Trouble_Shooting7.md) <br>
 
 추가 가능 ~~
 [⚒️[Trouble_Shooting4]](/History/trouble_shooting/Trouble_Shooting4.md) <br>
 [⚒️[Trouble_Shooting5]](/History/trouble_shooting/Trouble_Shooting5.md) <br>
 [⚒️[Trouble_Shooting6]](/History/trouble_shooting/Trouble_Shooting6.md) <br>
-[⚒️[Trouble_Shooting7]](/History/trouble_shooting/Trouble_Shooting7.md) <br>

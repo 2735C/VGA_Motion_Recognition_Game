@@ -1,4 +1,4 @@
-## [Pattern  구현 Module 리소스 ]
+## [Pattern 구현 Module 리소스 부족]
 
 
 ### 1️⃣ 모듈 구조

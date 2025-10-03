@@ -1,16 +1,20 @@
-#### (3) 패턴 구현 자동화 스크립트 (Python)
+## [패턴 구현 자동화 스크립트 (Python)]
 
-#### Issue
+### 🔥 문제
 
 초기에는 수동으로 단순히 화면의 좌표를 직접 추출해 hex 코드로 변환해서 업로드
 
-→ 측정오차, 비효율성, 비일관성
+:arrow_right: 측정오차, 비효율성, 비일관성
 
-> 이러한 문제들을 해결하기 위해 파이썬을 이용해 패턴 구현 자동화 스크립트 구상
+### 🤩 해결 방법
+
+이러한 문제들을 해결하기 위해 파이썬을 이용해 패턴 구현 자동화 스크립트 구상
 
 #### Process Flow
+
 <img src="/History/img/hw/img_104.png" width=300> | 
 --|
+
 - 이미지를 불러온 후 사용하는 VGA 화면 크기로 맞춤
 - 이미지 안에서 빨간색 테두리를 탐색
 - 윤곽선을 꼭짓점 30개로 단순화
@@ -28,5 +32,5 @@
 --|--|-- 
 <img src="/History/img/hw/img_108.png" width=300 >|<img src="/History/img/hw/img_106.png" width=300 >|<img src="/History/img/hw/img_107.png" width=300 >|
 
-> Auto pipeline 과정으로 정확성, 효율성, 일관성 확보
+:arrow_right:  Auto pipeline 과정으로 정확성, 효율성, 일관성 확보
 
