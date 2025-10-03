@@ -239,6 +239,16 @@ x pixel의 위치가 왼쪽이면 0, 오른쪽이면 1 출력 <br>
 
 (2) 패턴 구현 자동화 스크립트 (Python)
 
+Process Flow
+<img src="/History/img/hw/img_104.png" width=300> | 
+--|
+- 이미지를 불러온 후 사용하는 VGA 화면 크기로 맞춤
+- 이미지 안에서 빨간색 테두리를 탐색
+- 윤곽선을 꼭짓점 30개로 단순화
+- 선택한 영역(x범위)에 맞추고 원하는 사이즈로 조정해서 바닥 정렬
+- 꼭짓점을 연결한 선분 좌표를 추출해서 38비트로 packing → .hex 파일로 저장
+- 결과를 미리보기로 확인하고, .hex 파일 다운로드
+
 > ### :three: Color Detection Algorithm
 
 > RGB 방식에서 
