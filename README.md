@@ -1,6 +1,4 @@
-# 🕺🪩 Let's Dance
-
-> ### : VGA 기반 K-Dance 모션 인식 게임
+# 🕺Let's Dance: VGA 기반 K-Dance 모션 인식 게임
 
 ## 팀원 
 
@@ -47,10 +45,10 @@
     </td>
     <td width="400">
       <br>
-      <span style="font-size:25px; font-weight:bold;">:one: 패턴을 확인한다. </span><br><br>
-      <span style="font-size:25px; font-weight:bold;">:two: 패턴에 맞춰 몸을 맞춘다. </span><br><br>
-      <span style="font-size:25px; font-weight:bold;">:three: 점수를 확인한다. </span><br><br>
-      <span style="font-size:25px; font-weight:bold;">:four: 랭킹칸에 이름을 입력한다. </span><br><br>
+      <span style="font-size:25px; font-weight:bold;">:one: 곡을 선택한다. </span><br><br>
+      <span style="font-size:25px; font-weight:bold;">:two: 패턴을 확인한다. </span><br><br>
+      <span style="font-size:25px; font-weight:bold;">:three: 패턴에 맞춰 몸을 맞춘다. </span><br><br>
+      <span style="font-size:25px; font-weight:bold;">:four: 점수 확인 후 랭킹 칸에 이름을 입력한다. </span><br><br>
     </td>
   </tr>
 </table>
@@ -245,72 +243,7 @@ assign sdata = (absx + absy > threshold) ? 1 : 0;
 ```
 
 
-> ### :two: Parttern Algorithm
-
-#### (1) Point In Polygon
-
-어떤 점(Point)이 다각형(Polygon) 내부에 있는지 판별 <br>
-
-|내/외부 판별 Algorithm | 핵심 기술|
---|--
-|Ray Crossing | 단순 비교 나눗셈, 곱셈 연산|
-|Winding Number | Vector 회전각 계산, 고정 소수점 연산|
-|Triangle Fan | 삼각 분할 Data, Barycentric 좌표 연산|
-|Bounding Volume | 사각 Grid, 공간 분할 연산|
-
-☑️ 여러 Algorithm 후보들 중에서 제한된 리소스를 가지고 구현할 수 있는 Ray Crossing 사용
-
-#### (2) Ray Crossing
-
-<img src="/History/img/hw/img_101.png" width=300> | <img src="/History/img/hw/img_102.png" width=300 >|<img src="/History/img/hw/img_103.png" width=300 >|
---|--|-- 
-
-<!--
-• 두쌍의 좌표를 입력 받아서 가상의 선분 생성 <br>
-• x pixel의 위치가 왼쪽이면 0, 오른쪽이면 1 출력 <br>
--->
-
-1) (x1,y1), (x2,y2) 두 점의 좌표 한 쌍으로 한 개의 선분 생성 <br>
-2) 총 30개의 Module 병렬 실행 → Pattern 제작 <br>
-3) x축에서 x좌표가 증가할 때마다 hit 횟수 Check (XOR 연산 : 홀수번 Hit = 1,짝수번 Hit = 0) <br>
-> Pattern 내부 = 1, 외부 = 0 출력
-
-
-#### (2) 패턴 구현 자동화 스크립트 (Python)
-
-#### Issue
-
-초기에는 수동으로 단순히 화면의 좌표를 직접 추출해 hex 코드로 변환해서 업로드
-
-→ 측정오차, 비효율성, 비일관성
-
-> 이러한 문제들을 해결하기 위해 파이썬을 이용해 패턴 구현 자동화 스크립트 구상
-
-#### Process Flow
-<img src="/History/img/hw/img_104.png" width=300> | 
---|
-- 이미지를 불러온 후 사용하는 VGA 화면 크기로 맞춤
-- 이미지 안에서 빨간색 테두리를 탐색
-- 윤곽선을 꼭짓점 30개로 단순화
-- 선택한 영역(x범위)에 맞추고 원하는 사이즈로 조정해서 바닥 정렬
-- 꼭짓점을 연결한 선분 좌표를 추출해서 38비트로 packing → .hex 파일로 저장
-- 결과를 미리보기로 확인하고, .hex 파일 다운로드
-
-<img src="/History/img/hw/img_105.png" width=300> | 
---|
-
-
-#### Result
-
-|그림   |초기 ver | 최종 ver|
---|--|-- 
-<img src="/History/img/hw/img_108.png" width=300 >|<img src="/History/img/hw/img_106.png" width=300 >|<img src="/History/img/hw/img_107.png" width=300 >|
-
-> Auto pipeline 과정으로 정확성, 효율성, 일관성 확보
-
-
-
-> ### :three: Color Detection Algorithm
+> ### :two: Color Detection Algorithm
 
 - **색 검출 정확도를 올리기 위해서 RGB 방식 :arrow_right: HSV 방식 채택**
 
@@ -361,7 +294,7 @@ assign s_is_ok = (delta >= (max_val >> 2));
 assign red = r_is_max && s_is_ok;
 ```
 
-> ### :four: Uart
+> ### :three: Uart
 ### Uart Blockdiagram
 
 <img src="/History/img/hw/img_52.png" width=600 > | <img src="/History/img/hw/img_53.png" width=600 >
@@ -407,7 +340,7 @@ tx | rx
 |:---:|:---:|:---:|
 | <img src="/History/img/hw/img_63.png" width=400 > | <img src="/History/img/hw/img_64.png" width=400 > | <img src="/History/img/hw/img_65.png" width=400 > |
 
-> ### :five: Game FSM
+> ### :four: Game FSM
 
 <img src="/History/img/hw/img_57.png" width=800 >
 
@@ -422,6 +355,80 @@ tx | rx
 | ⑥ 연출 종료 알림 | 점수 판정 연출이 끝나는 순간 | PC→FPGA | `f` | 해당 패턴 연출 종료 (rx) |
 | ⑦ 반복 | 총 **7패턴**에 대해 ④~⑥ 반복 | — | — | `p→(결과)→f` 를 **7회** 수행 |
 | ⑧ 종료/리셋 | 모든 패턴 결과 합산 후 | PC→FPGA | `t` | 스코어보드 반영 완료 → 초기 화면 복귀 (rx) |
+
+
+
+> ### :five: Parttern Algorithm
+
+#### (1) Point In Polygon
+
+어떤 점(Point)이 다각형(Polygon) 내부에 있는지 판별 <br>
+
+|내/외부 판별 Algorithm | 핵심 기술|
+--|--
+|Ray Crossing | 단순 비교 나눗셈, 곱셈 연산|
+|Winding Number | Vector 회전각 계산, 고정 소수점 연산|
+|Triangle Fan | 삼각 분할 Data, Barycentric 좌표 연산|
+|Bounding Volume | 사각 Grid, 공간 분할 연산|
+
+☑️ 여러 Algorithm 후보들 중에서 제한된 리소스를 가지고 구현할 수 있는 **Ray Crossing** 사용
+
+#### (2) Ray Crossing
+
+<img src="/History/img/hw/img_101.png" width=300> | <img src="/History/img/hw/img_102.png" width=300 >|<img src="/History/img/hw/img_103.png" width=300 >|
+--|--|-- 
+
+<!--
+• 두쌍의 좌표를 입력 받아서 가상의 선분 생성 <br>
+• x pixel의 위치가 왼쪽이면 0, 오른쪽이면 1 출력 <br>
+-->
+
+1) (x1,y1), (x2,y2) 두 쌍의 좌표를 입력 받아서 가상의 선분 생성 <br>
+2) 총 30개의 Module 병렬 실행 → Pattern 제작 <br>
+3) x좌표가 증가할 때마다 hit 횟수 Check (XOR 연산 : 홀수번 Hit = 1,짝수번 Hit = 0) <br>
+
+> hit란? 
+현재 픽셀이 선분 y 범위 안에 있으면서, 픽셀 x가 선분과 교차하는 x보다 오른쪽에 있는 경우 hit = 1.
+
+:arrow_right: **Pattern 내부 = 1, 외부 = 0 출력**
+
+<!--
+
+#### (3) 패턴 구현 자동화 스크립트 (Python)
+
+#### Issue
+
+초기에는 수동으로 단순히 화면의 좌표를 직접 추출해 hex 코드로 변환해서 업로드
+
+→ 측정오차, 비효율성, 비일관성
+
+> 이러한 문제들을 해결하기 위해 파이썬을 이용해 패턴 구현 자동화 스크립트 구상
+
+#### Process Flow
+<img src="/History/img/hw/img_104.png" width=300> | 
+--|
+- 이미지를 불러온 후 사용하는 VGA 화면 크기로 맞춤
+- 이미지 안에서 빨간색 테두리를 탐색
+- 윤곽선을 꼭짓점 30개로 단순화
+- 선택한 영역(x범위)에 맞추고 원하는 사이즈로 조정해서 바닥 정렬
+- 꼭짓점을 연결한 선분 좌표를 추출해서 38비트로 packing → .hex 파일로 저장
+- 결과를 미리보기로 확인하고, .hex 파일 다운로드
+
+<img src="/History/img/hw/img_105.png" width=300> | 
+--|
+
+
+#### Result
+
+|그림   |초기 ver | 최종 ver|
+--|--|-- 
+<img src="/History/img/hw/img_108.png" width=300 >|<img src="/History/img/hw/img_106.png" width=300 >|<img src="/History/img/hw/img_107.png" width=300 >|
+
+> Auto pipeline 과정으로 정확성, 효율성, 일관성 확보
+
+-->
+
+
 
 ## 시연 영상
 
