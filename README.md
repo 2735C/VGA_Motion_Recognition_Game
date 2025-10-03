@@ -164,8 +164,23 @@ assign sdata = (absx + absy > threshold) ? 1 : 0;
 
 (1) Point In Polygon
 - 어떤 점(Point)이 다각형(Polygon) 내부에 있는지 판별 <br>
-<img src="/History/img/hw/img_100.png" alt="스위치 화면" width="400">
-- Ray Crossing
+
+|내/외부 판별 Algorithm | 핵심 기술|
+--|--
+|Ray Crossing | 단순 비교 나눗셈, 곱셈 연산|
+|Winding Number | Vector 회전각 계산, 고정 소수점 연산|
+|Triangle Fan | 삼각 분할 Data, Barycentric 좌표 연산|
+|Bounding Volume | 사각 Grid, 공간 분할 연산|
+
+> 여러 Algorithm 후보들 중에서 제한된 리소스를 가지고 구현할 수 있는 Ray Crossing 사용
+
+- Ray Crossing <br>
+<img src="/History/img/hw/img_101.png" alt="스위치 화면" width="400"> <br>
+두쌍의 좌표를 입력 받아서 가상의 선분 생성 <br>
+x pixel의 위치가 왼쪽이면 0, 오른쪽이면 1 출력 <br>
+<img src="/History/img/hw/img_102.png" alt="스위치 화면" width="400"><img src="/History/img/hw/img_103.png" alt="스위치 화면" width="400"> <br>
+총 30개의 Module 병렬 실행 → Pattern 제작 <br>
+Pattern 내부 = 1, 외부 = 0 출력
 
 
 (2) 패턴 구현 자동화 스크립트 (Python)
