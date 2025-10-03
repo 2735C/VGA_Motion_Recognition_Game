@@ -57,14 +57,15 @@ $$
 --|
 
 
-#### ❗원인
+> #### ❗원인
+
 <img src="/History/img/hw/img_115.png" width=600> |
 --|
 
 * **Porch 영역까지 Count** 되어서 생각했던 것보다 더 많은 **Red**가 Count됨.
 
-     *  Porch 영역 : Display 영역 출력 전/후 Sync를 맞추기 위한 Margin영역
-역
+     *  Porch 영역 : Display 영역 출력 전/후 Sync를 맞추기 위한 Margin 영역
+
 
 > #### 수정 Logic
 
