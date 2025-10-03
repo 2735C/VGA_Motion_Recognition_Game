@@ -1,5 +1,7 @@
 # 🕺🪩 Let's Dance
 
+> ### : VGA 기반 K-Dance 모션 인식 게임
+
 ## 팀원 
 
 > 역할 분배  바로가기 :arrow_right: [[Role]](/History/Role.md) 
