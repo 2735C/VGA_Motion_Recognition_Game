@@ -15,62 +15,37 @@
 
 ## ROLE
 
-[SW]
+문우진 | 안재용 |김을중 |
+--|--|--
+‣ 프로젝트 일정 관리 및 발표 자료 제작 <br> ‣ PIP, Ray Crossing 알고리즘 설계 <br> ‣ SCCB, UART 통신 설계<br> ‣ Zybo 기반 Top module Merge| <br> ‣ HDMI Interface 설계<br> ‣ AXI4 Protocol 기반 PL, PS설계 (Zybo Board)<br> ‣ Basys3 기반 Top module Merge| ‣ GUI 제작(화면 효과 구현) <br> ‣ SCCB 통신 설계 <br> ‣ Pattern FSM 구조 설계 <br> ‣ Zynq PS-PL 연동 구조 설계
 
-|   | 김병현 | 박승범 | 김을중 | 정은지|
-----|----|----|----|----
-GUI 설계| UART 통신, BGM | 디자인| 시각 효과 구현| 랭킹보드 구현
 
-[HW]
 
-문우진
+오정일| 김병현| 박승범| 정은지 
+--|--|--|--
+‣ 전처리 필터 설계 (Sobel) <br> ‣ Systemverilog 기반 검증 <br> ‣ Game Pattern 제작 (Python) <br> ‣ Pattern FSM 구조 설계| ‣ GUI 설계(UART, BGM) <br> ‣ 전처리 필터 설계 (Gaussian), Line Buffer 설계 <br> ‣ 색상 기반 인식 모듈 설계, Game FSM 구조 설계 <br> ‣ Basys3 기반 Top module Merge <br> ‣ Zynq PS-PL 연동 구조 설계|‣ GUI 제작(디자인)<br> ‣ 전처리 필터 설계 (Median)<br> ‣ PIP, Ray Crossing 알고리즘 설계<br> ‣ Basys3 기반 Top module Merge|‣ GUI 제작(디자인)<br> ‣ 전처리 필터 설계 (Median)<br> ‣ PIP, Ray Crossing 알고리즘 설계<br> ‣ Basys3 기반 Top module Merge
 
-- 발표 자료 제작 및 발표
-- SCCB 모듈 설계
-- PIP, Ray Crossing 
-- zybo board FPGA 
-- zybo 기반 통합 Merge
-
-김병현
-
-- 전처리 필터 설계 (메디안? 가우시안?), Line Buffer 설계
-- 색 검출 알고리즘 구현, 게임로직 FSM
-- Basys3 기반 통합 Merge
-- zybo board FPGA 
-- 점수 계산 모듈 최적화 및 개선
+<!--
 
 김을중
 
-- SCCB 모듈 설계
-- 패턴 감지 모듈 설계
-- zybo board FPGA 
-- 점수 계산 모듈 최적화 및 개선
+‣ GUI 제작(화면 효과 구현) <br> ‣ SCCB 통신 설계 <br> ‣ Pattern FSM 구조 설계 <br> ‣ Zynq PS-PL 연동 구조 설계
+
 
 박승범
-
-- 전처리 필터 설계 (메디안? 가우시안?)
-- Basys3 기반 통합 Merge
-- 점수 계산 모듈 최적화 및 개선
+‣ GUI 제작(디자인)<br> ‣ 전처리 필터 설계 (Median)<br> ‣ PIP, Ray Crossing 알고리즘 설계<br> ‣ Basys3 기반 Top module Merge
 
 안재용
-
-- zybo board FPGA 메인 담당
-- Basys3 기반 통합 Merge
-- 점수 계산 모듈 최적화 및 개선
+<br> ‣ HDMI Interface 설계<br> ‣ AXI4 Protocol 기반 PL, PS설계 (Zybo Board)<br> ‣ Basys3 기반 Top module Merge
 
 오정일
 
-- 전처리 필터 설계 (소벨 필터)
--  Systemverilog 기반 검증
-- 패턴 감지 모듈 설계
-- 패턴 제작
+‣ 전처리 필터 설계 (Sobel) <br> ‣ Systemverilog 기반 검증 <br> ‣ Game Pattern 제작 (Python) <br> ‣ Pattern FSM 구조 설계
 
 정은지
 
-- 전처리 필터 설계 (소벨 필터), Systemverilog 기반 검증
-- 색 검출 알고리즘 구현, 게임로직 FSM
-- Basys3 기반 통합 Merge
-- 점수 계산 모듈 최적화 및 개선
+‣ GUI 제작(디자인)<br> ‣ 전처리 필터 설계 (Median)<br> ‣ PIP, Ray Crossing 알고리즘 설계<br> ‣ Basys3 기반 Top module Merge
+-->
 
 
 
@@ -281,8 +256,6 @@ assign sdata = (absx + absy > threshold) ? 1 : 0;
 <img src="/History/img/hw/img_108.png" width=300 >|<img src="/History/img/hw/img_106.png" width=300 >|<img src="/History/img/hw/img_107.png" width=300 >|
 
 > Auto pipeline 과정으로 정확성, 효율성, 일관성 확보
-
-
 
 
 
