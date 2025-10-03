@@ -349,24 +349,10 @@ Uart Sender FSM
 
 <img src="/History/img/hw/img_54.png" width=600 >
 
-|       구분      | 코드/비트 | 조건                | 송신 문자열 |
-|:----------------:|:---------:|:--------------------:|:-----------:|
-| **모드 선택**     | 0         | uart_mode_sel == 0  | 'qstick'  |
-|                 | 1         | uart_mode_sel == 1  | 'golden'   |
-|                 | 2         | uart_mode_sel == 2  | 'sodapop'  |
-| **결과 플래그**   | 0         | result[0] == 1      | 'BAD'      |
-|                 | 1         | result[1] == 1      | 'GOOD'     |
-|                 | 2         | result[2] == 1      | 'PERFECT'  |
+tx | rx
+--|--
+<img src="/History/img/hw/img_55.png" width=400 > | <img src="/History/img/hw/img_56.png" width=200 > 
 
-| 수신 문자열 | FSM 제어 신호 |
-|:---------:|:------------:|
-|'g'        | uart_sig = 1 |
-|'s'        | uart_sig = 2 |
-|'p'        | uart_sig = 1 |
-|'f'        | uart_sig = 1 |
-|'t'        | uart_sig = 1 |
-
-<img src="/History/img/hw/img_55.png" width=300 >
 
 > ### :five: Game FSM
 
