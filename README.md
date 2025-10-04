@@ -442,9 +442,9 @@ Uart Sender FSM| tx | rx
 |:--:|:--:|
 | <img src="https://raw.githubusercontent.com/2735C/VGA_Motion_Recognition_Game/main/History/img/another/game_play_1.gif" width="380"> | <img src="https://raw.githubusercontent.com/2735C/VGA_Motion_Recognition_Game/main/History/img/another/game_play_2.gif" width="380"> |
 
-| Game Play |
-|:--:|
-| <img src="https://raw.githubusercontent.com/2735C/VGA_Motion_Recognition_Game/main/History/img/another/game_play_3.gif" width="380"> |
+| Game Play | Ranking Board |
+|:--:|:--:|
+| <img src="https://raw.githubusercontent.com/2735C/VGA_Motion_Recognition_Game/main/History/img/another/game_play_3.gif" width="380"> |<img src="https://raw.githubusercontent.com/2735C/VGA_Motion_Recognition_Game/main/History/img/another/game_play_4.gif" width="380"> |
 
 
 ## 💡활용 분야
