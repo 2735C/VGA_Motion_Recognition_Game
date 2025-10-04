@@ -40,5 +40,5 @@
  <img src="/History/img/hw/img_12.png" width=500 >| <img src="/History/img/hw/img_13.png" width=500 >|
 
 
- ✅ **3FF Synchronizer**를 사용 → 타이밍 mismatch 해결 <br>
- ☑️ 화면이 더 이상 밀리지 않고 정상적으로 출력됨
+ ✅ **3FF Synchronizer**를 사용 → **타이밍 mismatch 해결** <br>
+ ☑️ 화면이 더 이상 밀리지 않고 **정상적으로 출력**됨

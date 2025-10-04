@@ -32,5 +32,5 @@
 --|--|-- 
 <img src="/History/img/hw/img_108.png" width=200 >|<img src="/History/img/hw/img_106.png" width=300 >|<img src="/History/img/hw/img_107.png" width=300 >|
 
-:arrow_right:  Auto pipeline 과정으로 정확성, 효율성, 일관성 확보
+:arrow_right:  Auto pipeline 과정으로 **정확성, 효율성, 일관성 확보**
 
