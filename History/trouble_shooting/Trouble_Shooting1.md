@@ -73,7 +73,7 @@ $$
 
 > DE 신호란?
 
-```
+```systemverilog
 localparam H_Display_area = 640;
 localparam V_Display_area = 480;
 
