@@ -70,3 +70,15 @@ $$
 > #### 수정 Logic
 
 :arrow_right: **VGA Decoder의 DE 신호**를 받아서 처리 -> **유효한 픽셀(640x480)** 의 수만 **Count**
+
+> DE 신호란?
+
+```
+localparam H_Display_area = 640;
+localparam V_Display_area = 480;
+
+assign DE = (h_counter < H_Display_area) && (v_counter < V_Display_area);
+
+assign x_pixel = h_counter;
+assign y_pixel = v_counter;
+```
