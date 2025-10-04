@@ -30,7 +30,7 @@
 
 - 문제 인식 : 현대 사회에 들어 지속적으로 증가하는 우울감과 스트레스
 
-- 해결 방안 : 글로벌 시장에서 큰 인기를 얻고 있는 K-POP을 통해 스트레스 해소 및 긍정적인 에너지를 전달.
+- 해결 방안 : 글로벌 시장에서 큰 인기를 얻고 있는 K-POP을 통해 스트레스 해소 및 긍정적인 에너지를 전달
 
 ##
 
@@ -366,7 +366,7 @@ Uart Sender FSM| tx | rx
 
 > ### :five: Parttern Algorithm
 
-#### (1) Point In Polygon
+### (1) Point In Polygon
 
 어떤 점(Point)이 다각형(Polygon) 내부에 있는지 판별 <br>
 
@@ -379,7 +379,7 @@ Uart Sender FSM| tx | rx
 
 ☑️ 여러 Algorithm 후보들 중에서 제한된 리소스를 가지고 구현할 수 있는 **Ray Crossing** 사용
 
-#### (2) Ray Crossing
+### (2) Ray Crossing
 
 <img src="/History/img/hw/img_101.png" width=300> | <img src="/History/img/hw/img_102.png" width=300 >|<img src="/History/img/hw/img_103.png" width=300 >|
 --|--|-- 
